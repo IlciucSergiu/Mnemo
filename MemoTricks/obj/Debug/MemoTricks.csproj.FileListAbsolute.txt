@@ -1,1 +1,9 @@
 D:\Clase\Sergiu 10H\MemoTricks\MemoTricks\bin\Debug\MemoTricks.exe.config
+C:\Users\Administrator\Desktop\MemoryTricks\MemoTricks\bin\Debug\MemoTricks.exe.config
+C:\Users\Administrator\Desktop\MemoryTricks\MemoTricks\bin\Debug\MemoTricks.exe
+C:\Users\Administrator\Desktop\MemoryTricks\MemoTricks\bin\Debug\MemoTricks.pdb
+C:\Users\Administrator\Desktop\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.Properties.Resources.resources
+C:\Users\Administrator\Desktop\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.exe
+C:\Users\Administrator\Desktop\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.pdb
