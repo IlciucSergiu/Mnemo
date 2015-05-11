@@ -7,3 +7,6 @@ C:\Users\Administrator\Desktop\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.Prop
 C:\Users\Administrator\Desktop\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.csproj.GenerateResource.Cache
 C:\Users\Administrator\Desktop\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.exe
 C:\Users\Administrator\Desktop\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.pdb
+C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\bin\Debug\MemoTricks.exe.config
+C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.exe
+C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.pdb
