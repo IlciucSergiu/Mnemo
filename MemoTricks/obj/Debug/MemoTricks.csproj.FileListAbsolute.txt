@@ -10,3 +10,12 @@ C:\Users\Administrator\Desktop\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.pdb
 C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\bin\Debug\MemoTricks.exe.config
 C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.exe
 C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.pdb
+C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\bin\Debug\MemoTricks.exe
+C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\bin\Debug\MemoTricks.pdb
+C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.csprojResolveAssemblyReference.cache
+C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.Form1.resources
+C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.Properties.Resources.resources
+C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.SistemulPeg.resources
+C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.csproj.GenerateResource.Cache
+C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.Imagini1.resources
+C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.Texte1.resources
