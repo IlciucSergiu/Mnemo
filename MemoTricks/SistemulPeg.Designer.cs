@@ -35,6 +35,9 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.previous = new System.Windows.Forms.Button();
+            this.next = new System.Windows.Forms.Button();
             this.pictureBoxLista = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLista)).BeginInit();
@@ -46,7 +49,7 @@
             this.LeftText.BackColor = System.Drawing.Color.White;
             this.LeftText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LeftText.ForeColor = System.Drawing.Color.Black;
-            this.LeftText.Location = new System.Drawing.Point(-4, 51);
+            this.LeftText.Location = new System.Drawing.Point(12, 43);
             this.LeftText.Name = "LeftText";
             this.LeftText.Size = new System.Drawing.Size(321, 377);
             this.LeftText.TabIndex = 0;
@@ -87,12 +90,40 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // imageList2
+            // 
+            this.imageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // previous
+            // 
+            this.previous.Location = new System.Drawing.Point(383, 369);
+            this.previous.Name = "previous";
+            this.previous.Size = new System.Drawing.Size(75, 23);
+            this.previous.TabIndex = 8;
+            this.previous.Text = "<";
+            this.previous.UseVisualStyleBackColor = true;
+            this.previous.Visible = false;
+            this.previous.Click += new System.EventHandler(this.previous_Click);
+            // 
+            // next
+            // 
+            this.next.Location = new System.Drawing.Point(647, 369);
+            this.next.Name = "next";
+            this.next.Size = new System.Drawing.Size(75, 23);
+            this.next.TabIndex = 9;
+            this.next.Text = ">";
+            this.next.UseVisualStyleBackColor = true;
+            this.next.Visible = false;
+            this.next.Click += new System.EventHandler(this.next_Click);
+            // 
             // pictureBoxLista
             // 
             this.pictureBoxLista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxLista.Location = new System.Drawing.Point(344, 51);
+            this.pictureBoxLista.Location = new System.Drawing.Point(362, 67);
             this.pictureBoxLista.Name = "pictureBoxLista";
-            this.pictureBoxLista.Size = new System.Drawing.Size(368, 296);
+            this.pictureBoxLista.Size = new System.Drawing.Size(371, 296);
             this.pictureBoxLista.TabIndex = 7;
             this.pictureBoxLista.TabStop = false;
             this.pictureBoxLista.Visible = false;
@@ -101,7 +132,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::MemoTricks.Imagini1.Cuier;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(344, 72);
+            this.pictureBox1.Location = new System.Drawing.Point(362, 74);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(371, 146);
             this.pictureBox1.TabIndex = 3;
@@ -113,7 +144,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(727, 429);
+            this.ClientSize = new System.Drawing.Size(783, 429);
+            this.Controls.Add(this.next);
+            this.Controls.Add(this.previous);
             this.Controls.Add(this.pictureBoxLista);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -138,5 +171,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBoxLista;
+        private System.Windows.Forms.ImageList imageList2;
+        private System.Windows.Forms.Button previous;
+        private System.Windows.Forms.Button next;
     }
 }

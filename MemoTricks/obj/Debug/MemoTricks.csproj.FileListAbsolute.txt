@@ -19,3 +19,4 @@ C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debu
 C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.csproj.GenerateResource.Cache
 C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.Imagini1.resources
 C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.Texte1.resources
+C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.TestPeg.resources
