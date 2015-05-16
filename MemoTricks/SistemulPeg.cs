@@ -16,7 +16,7 @@ namespace MemoTricks
         {
             InitializeComponent();
         }
-        int slide = 1, _image = 1;
+        int slide = 1, _image;
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -39,14 +39,14 @@ namespace MemoTricks
                         {
                             LeftText.Text = Texte1.text1_1;
                             LeftText.Font = new Font("Arial", 16);
-                            
+
                             break;
                         }
                     case 2:
                         {
                             LeftText.Text = Texte1.text1_2;
 
-                           
+
                             LeftText.Font = new Font("Arial", 14);
                             break;
                         }
@@ -54,18 +54,18 @@ namespace MemoTricks
                         {
                             LeftText.Text = Texte1.text1_3;
                             LeftText.Font = new Font("Arial", 16);
-                            
+
                             break;
                         }
-                    case 4: 
-                        { 
-                    LeftText.Text = Texte1.text1_4;
-                    pictureBoxLista.BackgroundImage = Imagini1._1_img;
-                    pictureBoxLista.Visible = true; 
-                        break;
+                    case 4:
+                        {
+                            LeftText.Text = Texte1.text1_4;
+                            pictureBoxLista.BackgroundImage = Imagini1._1_img;
+                            pictureBoxLista.Visible = true;
+                            break;
                         }
-                       
-                       
+
+
                 }
                 if (slide == 2)
                     pictureBox1.Visible = true;
@@ -76,25 +76,26 @@ namespace MemoTricks
                     pictureBoxLista.Visible = true;
                 else
                     pictureBoxLista.Visible = false;
-                
+
                 if (slide == 4)
                 {
+                    _image = 1;
                     previous.Visible = true;
                     next.Visible = true;
 
                 }
-                else 
+                else
                 {
                     previous.Visible = false;
                     next.Visible = false;
                 }
             }
 
-            
-               
-                
-            }
-       
+
+
+
+        }
+
         void PictureSlideBackwards()
         {
 
@@ -107,14 +108,14 @@ namespace MemoTricks
                         {
                             LeftText.Text = Texte1.text1_1;
                             LeftText.Font = new Font("Arial", 16);
-                            
+
                             break;
                         }
                     case 2:
                         {
                             LeftText.Text = Texte1.text1_2;
 
-                            
+
                             LeftText.Font = new Font("Arial", 14);
                             break;
                         }
@@ -122,26 +123,27 @@ namespace MemoTricks
                         {
                             LeftText.Text = Texte1.text1_3;
                             LeftText.Font = new Font("Arial", 16);
-                            
+
                             break;
                         }
-                    case 4: { 
-                        LeftText.Text = Texte1.text1_4; 
-                        pictureBoxLista.BackgroundImage = Imagini1._1_img;
-                        pictureBoxLista.Visible = true;
-                        break;
-                    }
+                    case 4:
+                        {
+                            LeftText.Text = Texte1.text1_4;
+                            pictureBoxLista.BackgroundImage = Imagini1._1_img;
+                            pictureBoxLista.Visible = true;
+                            break;
+                        }
                 }
                 if (slide == 2)
                     pictureBox1.Visible = true;
-                else 
+                else
                     pictureBox1.Visible = false;
 
                 if (slide >= 4)
                     pictureBoxLista.Visible = true;
                 else
                     pictureBoxLista.Visible = false;
-                
+
                 if (slide == 4)
                 {
                     previous.Visible = true;
@@ -154,15 +156,15 @@ namespace MemoTricks
                     next.Visible = false;
                 }
             }
-            
-                
-             
+
+
+
 
         }
 
         private void pictureBoxLista_MouseEnter(object sender, EventArgs e)
         {
-           // MessageBox.Show("Test");
+            // MessageBox.Show("Test");
 
             if (MousePosition.X > pictureBoxLista.Width / 2 + 344)
             {
@@ -175,128 +177,32 @@ namespace MemoTricks
         private void next_Click(object sender, EventArgs e)
         {
 
-            if (_image < 10)
-            {
-                _image++;
-
-                switch (_image)
-                {
-                    case 1:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._1_img;
-                            break;
-                        }
-                    case 2:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._2_img;
-                            break;
-                        }
-                    case 3:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._3_img;
-                            break;
-                        }
-                    case 4:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._4_img;
-                            break;
-                        }
-                    case 5:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._5_img;
-                            break;
-                        }
-                    case 6:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._6_img;
-                            break;
-                        }
-                    case 7:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._7_img;
-                            break;
-                        }
-                    case 8:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._8_img;
-                            break;
-                        }
-                    case 9:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._9_img;
-                            break;
-                        }
-                    case 10:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._10_img;
-                            break;
-                        }
-                }
-            }
+            NextClick();
         }
         private void previous_Click(object sender, EventArgs e)
         {
+            PreviousClick();           
+        }
+        public void NextClick()
+        {
+            if (_image < 10)
+            {
+                _image++;
+                ImageList imgList = new ImageList();
+                pictureBoxLista.BackgroundImage = imgList.ReturnImage(_image);
+                
+            }
 
-            if ( _image > 1)
+        }
+        public void PreviousClick()
+        {
+            if (_image > 1)
             {
                 _image--;
 
-                switch (_image)
-                {
-                    case 1:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._1_img;
-                            break;
-                        }
-                    case 2:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._2_img;
-                            break;
-                        }
-                    case 3:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._3_img;
-                            break;
-                        }
-                    case 4:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._4_img;
-                            break;
-                        }
-                    case 5:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._5_img;
-                            break;
-                        }
-                    case 6:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._6_img;
-                            break;
-                        }
-                    case 7:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._7_img;
-                            break;
-                        }
-                    case 8:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._8_img;
-                            break;
-                        }
-                    case 9:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._9_img;
-                            break;
-                        }
-                    case 10:
-                        {
-                            pictureBoxLista.BackgroundImage = Imagini1._10_img;
-                            break;
-                        }
-                }
+                ImageList imgList = new ImageList();
+                pictureBoxLista.BackgroundImage = imgList.ReturnImage(_image);
             }
         }
-
-    
     }
 }

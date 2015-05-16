@@ -61,6 +61,24 @@ namespace MemoTricks {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Memoreaza aceasta lista de obiecte folosind sistemul Peg.                    .
+        /// </summary>
+        internal static string text_info_1 {
+            get {
+                return ResourceManager.GetString("text_info_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bifeaza butonul &quot;Imagine&quot; in cazul in care nu iti amintesti imaginea corespunzatoare numarului..
+        /// </summary>
+        internal static string text_info_2 {
+            get {
+                return ResourceManager.GetString("text_info_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Daca trebuie sa inveti liste de obiecte pentru scoala, servici, hobby sau alte scopuri, atunci sistemul Peg este exact ce ai nevoie.
         ///    Acest sistem este ideal atunci cand ai nevoie sa iti reamintesti obiectele intr-o anumita ordine..
         /// </summary>

@@ -137,4 +137,10 @@ Pentru aceasta, se ataseaza fiecarui numar o imagine a uni obiect cu care rimeaz
   <data name="text1_5" xml:space="preserve">
     <value />
   </data>
+  <data name="text_info_1" xml:space="preserve">
+    <value>Memoreaza aceasta lista de obiecte folosind sistemul Peg.                    </value>
+  </data>
+  <data name="text_info_2" xml:space="preserve">
+    <value>Bifeaza butonul "Imagine" in cazul in care nu iti amintesti imaginea corespunzatoare numarului.</value>
+  </data>
 </root>
