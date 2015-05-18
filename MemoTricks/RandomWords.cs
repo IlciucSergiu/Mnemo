@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows.Forms;
 
 
 
@@ -19,7 +20,7 @@ namespace MemoTricks
         {
             // introducem cuvintele din lista intr-un vector
 
-            StreamReader sReader = new StreamReader("C:\\Sergiu\\Programe\\CSharp\\Proiecte\\Infoeducatie\\MemoryTricks\\Resurse\\Cuvinte lvl1\\Cuvinte.txt");
+            StreamReader sReader = new StreamReader(Application.StartupPath + "\\Cuvinte.txt");
             wordsList = sReader.ReadToEnd();
 
             foreach (string word in wordsList.Split('\n'))

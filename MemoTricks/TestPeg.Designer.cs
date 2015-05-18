@@ -40,7 +40,14 @@
             this.finish = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timeLabel = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.next2 = new System.Windows.Forms.Button();
+            this.previous2 = new System.Windows.Forms.Button();
+            this.labelPos2 = new System.Windows.Forms.Label();
+            this.testTextBox = new System.Windows.Forms.TextBox();
+            this.verifyButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLista)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -152,11 +159,73 @@
             this.timeLabel.TabIndex = 9;
             this.timeLabel.Text = "00:00:00";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.verifyButton);
+            this.panel1.Controls.Add(this.next2);
+            this.panel1.Controls.Add(this.previous2);
+            this.panel1.Controls.Add(this.labelPos2);
+            this.panel1.Controls.Add(this.testTextBox);
+            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(621, 329);
+            this.panel1.TabIndex = 10;
+            this.panel1.Visible = false;
+            // 
+            // next2
+            // 
+            this.next2.Location = new System.Drawing.Point(178, 170);
+            this.next2.Name = "next2";
+            this.next2.Size = new System.Drawing.Size(75, 23);
+            this.next2.TabIndex = 3;
+            this.next2.Text = ">";
+            this.next2.UseVisualStyleBackColor = true;
+            this.next2.Click += new System.EventHandler(this.next2_Click);
+            // 
+            // previous2
+            // 
+            this.previous2.Location = new System.Drawing.Point(46, 170);
+            this.previous2.Name = "previous2";
+            this.previous2.Size = new System.Drawing.Size(75, 23);
+            this.previous2.TabIndex = 2;
+            this.previous2.Text = "<";
+            this.previous2.UseVisualStyleBackColor = true;
+            this.previous2.Click += new System.EventHandler(this.previous2_Click);
+            // 
+            // labelPos2
+            // 
+            this.labelPos2.AutoSize = true;
+            this.labelPos2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPos2.Location = new System.Drawing.Point(85, 80);
+            this.labelPos2.Name = "labelPos2";
+            this.labelPos2.Size = new System.Drawing.Size(25, 25);
+            this.labelPos2.TabIndex = 1;
+            this.labelPos2.Text = "1";
+            // 
+            // testTextBox
+            // 
+            this.testTextBox.Location = new System.Drawing.Point(74, 122);
+            this.testTextBox.Name = "testTextBox";
+            this.testTextBox.Size = new System.Drawing.Size(122, 20);
+            this.testTextBox.TabIndex = 0;
+            this.testTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // verifyButton
+            // 
+            this.verifyButton.Location = new System.Drawing.Point(404, 243);
+            this.verifyButton.Name = "verifyButton";
+            this.verifyButton.Size = new System.Drawing.Size(139, 46);
+            this.verifyButton.TabIndex = 4;
+            this.verifyButton.Text = "Verifica";
+            this.verifyButton.UseVisualStyleBackColor = true;
+            this.verifyButton.Click += new System.EventHandler(this.verifyButton_Click);
+            // 
             // TestPeg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(618, 326);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.finish);
             this.Controls.Add(this.pictureBoxLista);
@@ -170,6 +239,8 @@
             this.Name = "TestPeg";
             this.Text = "TestPeg";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLista)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +259,11 @@
         private System.Windows.Forms.Button finish;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label timeLabel;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox testTextBox;
+        private System.Windows.Forms.Button next2;
+        private System.Windows.Forms.Button previous2;
+        private System.Windows.Forms.Label labelPos2;
+        private System.Windows.Forms.Button verifyButton;
     }
 }

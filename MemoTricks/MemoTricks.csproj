@@ -46,11 +46,11 @@
   <ItemGroup>
     <Compile Include="ImageList.cs" />
     <Compile Include="RandomWords.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="MeniuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MeniuPrincipal.Designer.cs">
+      <DependentUpon>MeniuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Imagini1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -76,8 +76,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Texte1.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MeniuPrincipal.resx">
+      <DependentUpon>MeniuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagini1.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

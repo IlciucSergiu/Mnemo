@@ -17,6 +17,7 @@ namespace MemoTricks
             InitializeComponent();
         }
          string[] words = new string[11];
+          string[] wordsCheck = new string[11];
          int pos = 0, sec1, min;
         private void start_Click(object sender, EventArgs e)
         {
@@ -123,6 +124,61 @@ namespace MemoTricks
         private void finish_Click(object sender, EventArgs e)
         {
             timer1.Stop();
+            panel1.Visible = true;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        int pos2 = 1;
+
+        private void previous2_Click(object sender, EventArgs e)
+        {
+            
+            if (pos2 > 1)
+            {
+                wordsCheck[pos2] = testTextBox.Text.Trim() ;
+                pos2--;
+                labelPos2.Text = pos2.ToString();
+                
+                testTextBox.Text = wordsCheck[pos2];
+            }
+        }
+
+        private void next2_Click(object sender, EventArgs e)
+        {
+            if (pos2 < 10 )
+            {
+                wordsCheck[pos2] = testTextBox.Text.Trim() ;
+                pos2++;
+                labelPos2.Text = pos2.ToString();
+                testTextBox.Text = wordsCheck[pos2];
+            }
+        }
+
+        // Contorul care retine numarul raspunsurilor corecte
+        int rightAnswers = 0;
+        string ver;
+        private void verifyButton_Click(object sender, EventArgs e)
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                if (wordsCheck[i] == words[i].Trim())
+                    rightAnswers++;
+                    
+            }
+
+            
+            for (int i = 1; i < 11; i++)
+            {
+                ver += words[i].Trim() + "" + wordsCheck[i] + "\n";
+            }
+            ver += "\n";
+           
+            
+            MessageBox.Show("Ati raspuns corect la "+ rightAnswers +" din 10.\n" + ver , "Rezultat ");
         }
     }
 }
