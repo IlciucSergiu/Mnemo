@@ -163,6 +163,16 @@ namespace MemoTricks {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap baraSus {
+            get {
+                object obj = ResourceManager.GetObject("baraSus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Cuier {
             get {
                 object obj = ResourceManager.GetObject("Cuier", resourceCulture);
@@ -186,6 +196,16 @@ namespace MemoTricks {
         public static System.Drawing.Bitmap Imagini_margine2 {
             get {
                 object obj = ResourceManager.GetObject("Imagini_margine2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap textBackground {
+            get {
+                object obj = ResourceManager.GetObject("textBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

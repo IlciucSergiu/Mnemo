@@ -15,6 +15,8 @@ namespace MemoTricks
         public SistemulPeg()
         {
             InitializeComponent();
+
+            
         }
         int slide = 1, _image;
 
@@ -203,6 +205,16 @@ namespace MemoTricks
                 ImageList imgList = new ImageList();
                 pictureBoxLista.BackgroundImage = imgList.ReturnImage(_image);
             }
+        }
+
+        private void SistemulPeg_Load(object sender, EventArgs e)
+        {
+            previous.FlatStyle = FlatStyle.Flat;
+            previous.FlatAppearance.BorderSize = 0;
+            next.FlatStyle = FlatStyle.Flat;
+            next.FlatAppearance.BorderSize = 0;
+            //previous.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255); //Transparent
+            
         }
     }
 }
