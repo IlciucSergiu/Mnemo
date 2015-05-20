@@ -20,8 +20,9 @@ namespace MemoTricks
         {
             // introducem cuvintele din lista intr-un vector
 
-            StreamReader sReader = new StreamReader(Application.StartupPath + "\\Cuvinte.txt");
-            wordsList = sReader.ReadToEnd();
+            //StreamReader sReader = new StreamReader(Application.StartupPath + "\\Cuvinte.txt");
+            //wordsList = sReader.ReadToEnd();
+            wordsList = Texte1.text_cuvinte;
 
             foreach (string word in wordsList.Split('\n'))
             {

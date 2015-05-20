@@ -32,7 +32,7 @@ namespace MemoTricks
 
         void PictureSlideForward()
         {
-            if (slide < 4)
+            if (slide < 5)
             {
                 slide++;
                 switch (slide)
@@ -47,7 +47,7 @@ namespace MemoTricks
                     case 2:
                         {
                             LeftText.Text = Texte1.text1_2;
-
+                            pictureBox1.BackgroundImage = Imagini1.Cuier;
 
                             LeftText.Font = new Font("Arial", 14);
                             break;
@@ -62,6 +62,13 @@ namespace MemoTricks
                     case 4:
                         {
                             LeftText.Text = Texte1.text1_4;
+                            pictureBox1.BackgroundImage = Imagini1.scrisoare_final;
+
+                            break;
+                        }
+                    case 5:
+                        {
+                            LeftText.Text = Texte1.text1_5;
                             pictureBoxLista.BackgroundImage = Imagini1._1_img;
                             pictureBoxLista.Visible = true;
                             break;
@@ -69,17 +76,21 @@ namespace MemoTricks
 
 
                 }
-                if (slide == 2)
+                if (slide == 2 || slide == 4)
+                {
+                    
                     pictureBox1.Visible = true;
+                }
                 else
                     pictureBox1.Visible = false;
-
-                if (slide >= 4)
+                
+                
+                if (slide >= 5)
                     pictureBoxLista.Visible = true;
                 else
                     pictureBoxLista.Visible = false;
 
-                if (slide == 4)
+                if (slide == 5)
                 {
                     _image = 1;
                     previous.Visible = true;
@@ -116,7 +127,7 @@ namespace MemoTricks
                     case 2:
                         {
                             LeftText.Text = Texte1.text1_2;
-
+                            pictureBox1.BackgroundImage = Imagini1.Cuier;
 
                             LeftText.Font = new Font("Arial", 14);
                             break;
@@ -131,23 +142,38 @@ namespace MemoTricks
                     case 4:
                         {
                             LeftText.Text = Texte1.text1_4;
+                            pictureBox1.BackgroundImage = Imagini1.scrisoare_final;
+
+                            break;
+                        }
+                    case 5:
+                        {
+                            LeftText.Text = Texte1.text1_5;
                             pictureBoxLista.BackgroundImage = Imagini1._1_img;
                             pictureBoxLista.Visible = true;
                             break;
                         }
+
+
                 }
-                if (slide == 2)
+                if (slide == 2 || slide == 4)
+                {
+                   
                     pictureBox1.Visible = true;
+                }
                 else
                     pictureBox1.Visible = false;
 
-                if (slide >= 4)
+                
+
+                if (slide >= 5)
                     pictureBoxLista.Visible = true;
                 else
                     pictureBoxLista.Visible = false;
 
-                if (slide == 4)
+                if (slide == 5)
                 {
+                    _image = 1;
                     previous.Visible = true;
                     next.Visible = true;
 
@@ -209,12 +235,22 @@ namespace MemoTricks
 
         private void SistemulPeg_Load(object sender, EventArgs e)
         {
+            SetBorders();
+        }
+
+        void SetBorders()
+        {
             previous.FlatStyle = FlatStyle.Flat;
             previous.FlatAppearance.BorderSize = 0;
             next.FlatStyle = FlatStyle.Flat;
             next.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.FlatAppearance.BorderSize = 0;
             //previous.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255); //Transparent
             
         }
+
     }
 }

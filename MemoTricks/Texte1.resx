@@ -123,19 +123,47 @@
     <comment>Introducere</comment>
   </data>
   <data name="text1_2" xml:space="preserve">
-    <value>Functioneaza prin asocierea informatiilor pe care le cunosti , cum ar fi numerele de la 1 la 20, literele de la A la Z cu noile lucruri pe care vrei sa ti le amintesti.
+    <value>   Functioneaza prin asocierea informatiilor pe care le cunosti , cum ar fi numerele de la 1 la 20, literele de la A la Z cu noile lucruri pe care vrei sa ti le amintesti.
     Un “peg” (cuier) este un carlig mintal in care agatam informatia de care avem nevoie.
-Nu vei uita sa numeri pana la 20, si nici alfabetul. Totusi problema cu atasarea informatiilor de numere si litere este ca numerele si literele sunt abstracte (greu de vizualizat).</value>
+   Totusi problema cu atasarea informatiilor de numere si litere este ca numerele si literele sunt abstracte (greu de vizualizat).</value>
   </data>
   <data name="text1_3" xml:space="preserve">
-    <value>Sistemul Peg rezolva aceasta problema prin concretizarea literelor si a numerelor.
-Pentru aceasta, se ataseaza fiecarui numar o imagine a uni obiect cu care rimeaza sau are forma asemanatoare :</value>
+    <value>  Sistemul Peg rezolva aceasta problema prin concretizarea literelor si a numerelor.
+   Pentru aceasta, se ataseaza fiecarui numar o imagine a uni obiect cu care rimeaza sau are forma asemanatoare .</value>
   </data>
   <data name="text1_4" xml:space="preserve">
-    <value>Aceasta este list ape care o oferim noi, ea poate fi schimbata sau pot fi inlocuite unele obiecte cu altele care au o semnificatie speciala pentru tine.</value>
+    <value>Exemplu :</value>
   </data>
   <data name="text1_5" xml:space="preserve">
-    <value />
+    <value>   Aceasta este o lista cu imaginile pe care le-am asociat noi fiecarui numar.
+  De retinut ! (Aceste imagini nu se vor modifica, ci numai informatiile atasate lor).
+  Totusi, daca doriti o alta imagine mai semnificativa, aveti libertatea de a schimba, dar de la bun inceput.</value>
+  </data>
+  <data name="text_cuvinte" xml:space="preserve">
+    <value>casa
+masina
+aspirator
+laptop
+cutit
+sticla
+lant
+paine
+umbrela
+creion
+carte
+palarie
+copac
+papuc
+tun
+pistol
+minge
+ochelari
+tren
+scrisoare
+zid
+radio
+pahar</value>
+    <comment>Cuvinte pentru testare</comment>
   </data>
   <data name="text_info_1" xml:space="preserve">
     <value>Memoreaza aceasta lista de obiecte folosind sistemul Peg.                    </value>

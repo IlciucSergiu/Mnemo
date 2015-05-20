@@ -61,6 +61,37 @@ namespace MemoTricks {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to casa
+        ///masina
+        ///aspirator
+        ///laptop
+        ///cutit
+        ///sticla
+        ///lant
+        ///paine
+        ///umbrela
+        ///creion
+        ///carte
+        ///palarie
+        ///copac
+        ///papuc
+        ///tun
+        ///pistol
+        ///minge
+        ///ochelari
+        ///tren
+        ///scrisoare
+        ///zid
+        ///radio
+        ///pahar.
+        /// </summary>
+        internal static string text_cuvinte {
+            get {
+                return ResourceManager.GetString("text_cuvinte", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Memoreaza aceasta lista de obiecte folosind sistemul Peg.                    .
         /// </summary>
         internal static string text_info_1 {
@@ -89,9 +120,9 @@ namespace MemoTricks {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Functioneaza prin asocierea informatiilor pe care le cunosti , cum ar fi numerele de la 1 la 20, literele de la A la Z cu noile lucruri pe care vrei sa ti le amintesti.
+        ///   Looks up a localized string similar to    Functioneaza prin asocierea informatiilor pe care le cunosti , cum ar fi numerele de la 1 la 20, literele de la A la Z cu noile lucruri pe care vrei sa ti le amintesti.
         ///    Un “peg” (cuier) este un carlig mintal in care agatam informatia de care avem nevoie.
-        ///Nu vei uita sa numeri pana la 20, si nici alfabetul. Totusi problema cu atasarea informatiilor de numere si litere este ca numerele si literele sunt abstracte (greu de vizualizat)..
+        ///   Totusi problema cu atasarea informatiilor de numere si litere este ca numerele si literele sunt abstracte (greu de vizualizat)..
         /// </summary>
         internal static string text1_2 {
             get {
@@ -100,8 +131,8 @@ namespace MemoTricks {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sistemul Peg rezolva aceasta problema prin concretizarea literelor si a numerelor.
-        ///Pentru aceasta, se ataseaza fiecarui numar o imagine a uni obiect cu care rimeaza sau are forma asemanatoare :.
+        ///   Looks up a localized string similar to   Sistemul Peg rezolva aceasta problema prin concretizarea literelor si a numerelor.
+        ///   Pentru aceasta, se ataseaza fiecarui numar o imagine a uni obiect cu care rimeaza sau are forma asemanatoare ..
         /// </summary>
         internal static string text1_3 {
             get {
@@ -110,7 +141,7 @@ namespace MemoTricks {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Aceasta este list ape care o oferim noi, ea poate fi schimbata sau pot fi inlocuite unele obiecte cu altele care au o semnificatie speciala pentru tine..
+        ///   Looks up a localized string similar to Exemplu :.
         /// </summary>
         internal static string text1_4 {
             get {
@@ -119,7 +150,9 @@ namespace MemoTricks {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to    Aceasta este o lista cu imaginile pe care le-am asociat noi fiecarui numar.
+        ///  De retinut ! (Aceste imagini nu se vor modifica, ci numai informatiile atasate lor).
+        ///  Totusi, daca doriti o alta imagine mai semnificativa, aveti libertatea de a schimba, dar de la bun inceput..
         /// </summary>
         internal static string text1_5 {
             get {

@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SistemulPeg));
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.previous = new System.Windows.Forms.Button();
             this.next = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBoxLista = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.LeftText = new System.Windows.Forms.Label();
@@ -42,17 +42,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(36, 382);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(54, 38);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // button2
             // 
+            this.button2.BackgroundImage = global::MemoTricks.Imagini1.arrow_right;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Location = new System.Drawing.Point(231, 383);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(54, 38);
@@ -98,20 +91,31 @@
             // 
             this.pictureBoxLista.BackColor = System.Drawing.Color.White;
             this.pictureBoxLista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxLista.Location = new System.Drawing.Point(362, 46);
+            this.pictureBoxLista.Location = new System.Drawing.Point(362, 74);
             this.pictureBoxLista.Name = "pictureBoxLista";
             this.pictureBoxLista.Size = new System.Drawing.Size(371, 296);
             this.pictureBoxLista.TabIndex = 7;
             this.pictureBoxLista.TabStop = false;
             this.pictureBoxLista.Visible = false;
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::MemoTricks.Imagini1.arrow_left;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(36, 382);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(54, 38);
+            this.button1.TabIndex = 5;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::MemoTricks.Imagini1.Cuier;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(362, 74);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(371, 146);
+            this.pictureBox1.Size = new System.Drawing.Size(371, 296);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
