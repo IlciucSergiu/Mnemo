@@ -125,6 +125,7 @@ namespace MemoTricks
         {
             timer1.Stop();
             panel1.Visible = true;
+            timeTest.Text = timeLabel.Text;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -163,6 +164,7 @@ namespace MemoTricks
         string ver;
         private void verifyButton_Click(object sender, EventArgs e)
         {
+            wordsCheck[pos2] = testTextBox.Text.Trim();
             for (int i = 1; i <= 10; i++)
             {
                 if (wordsCheck[i] == words[i].Trim())
@@ -173,12 +175,12 @@ namespace MemoTricks
             
             for (int i = 1; i < 11; i++)
             {
-                ver += words[i].Trim() + "" + wordsCheck[i] + "\n";
+                ver += i + ". " + words[i].Trim() + " -- " + wordsCheck[i] + "\n";
             }
             ver += "\n";
            
             
-            MessageBox.Show("Ati raspuns corect la "+ rightAnswers +" din 10.\n" + ver , "Rezultat ");
+            MessageBox.Show("Ati raspuns corect la "+ rightAnswers +" din 10 intr-un timp de " + min + ":" + sec1 + "\n"+ ver , "Rezultat ");
         }
     }
 }

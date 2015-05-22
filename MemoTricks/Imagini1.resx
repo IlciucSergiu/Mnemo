@@ -148,9 +148,6 @@
   <data name="_4_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\4 img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_5_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Imagine 5 fara texte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="_6_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\img_6_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,9 +157,6 @@
   <data name="_8_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\8 cifra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_9_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Img 9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="arrow_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Arrows-Back- - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -171,5 +165,11 @@
   </data>
   <data name="scrisoare_final" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\scrisoare_final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_9_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\img9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\img5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

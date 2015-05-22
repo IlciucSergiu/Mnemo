@@ -90,7 +90,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(686, 419);
+            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.testPeg);
             this.Controls.Add(this.learnPeg);
             this.Controls.Add(this.button3);

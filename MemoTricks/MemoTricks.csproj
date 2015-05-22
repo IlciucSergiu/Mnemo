@@ -131,9 +131,6 @@
     <None Include="Resources\3 img.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Imagine 5 fara texte.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Imagini_margine2.png" />
   </ItemGroup>
   <ItemGroup>
@@ -177,6 +174,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\scrisoare_final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagine 5 fara texte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
