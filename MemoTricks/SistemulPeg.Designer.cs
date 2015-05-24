@@ -143,7 +143,6 @@
             this.LeftText.Name = "LeftText";
             this.LeftText.Size = new System.Drawing.Size(321, 464);
             this.LeftText.TabIndex = 0;
-            this.LeftText.Text = resources.GetString("LeftText.Text");
             // 
             // SistemulPeg
             // 

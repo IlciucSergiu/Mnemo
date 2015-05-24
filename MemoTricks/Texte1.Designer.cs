@@ -110,8 +110,7 @@ namespace MemoTricks {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Daca trebuie sa inveti liste de obiecte pentru scoala, servici, hobby sau alte scopuri, atunci sistemul Peg este exact ce ai nevoie.
-        ///    Acest sistem este ideal atunci cand ai nevoie sa iti reamintesti obiectele intr-o anumita ordine..
+        ///   Looks up a localized string similar to Un sistem peg este o tehnica folositoare pentru memorarea unei liste de obiecte, nu foarte mare..
         /// </summary>
         internal static string text1_1 {
             get {
@@ -120,9 +119,9 @@ namespace MemoTricks {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to    Functioneaza prin asocierea informatiilor pe care le cunosti , cum ar fi numerele de la 1 la 20, literele de la A la Z cu noile lucruri pe care vrei sa ti le amintesti.
-        ///    Un “peg” (cuier) este un carlig mintal in care agatam informatia de care avem nevoie.
-        ///   Totusi problema cu atasarea informatiilor de numere si litere este ca numerele si literele sunt abstracte (greu de vizualizat)..
+        ///   Looks up a localized string similar to Functioneaza prin asocierea obiectelor din lista pe care vrem sa o memoram, cu obiectele dintr-o alta lista bine cunoscuta.
+        ///  O asemenea lista ar fi numerele de la 1 la 10, literele de la A la Z deoarece nu pot fi uitate. Problema cu aceste liste este ca 
+        ///sunt abstracte (greu de visualizat), deaceea vom asocia fiecarui numar o imagine semnificativa..
         /// </summary>
         internal static string text1_2 {
             get {
@@ -131,8 +130,9 @@ namespace MemoTricks {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to   Sistemul Peg rezolva aceasta problema prin concretizarea literelor si a numerelor.
-        ///   Pentru aceasta, se ataseaza fiecarui numar o imagine a uni obiect cu care rimeaza sau are forma asemanatoare ..
+        ///   Looks up a localized string similar to Aceasta este o lista cu imaginile pe care le-am asociat noi fiecarui numar.
+        ///  De retinut ! (Aceste imagini nu se vor modifica, ci numai informatiile atasate lor).
+        ///  Totusi, daca doriti o alta imagine mai semnificativa, aveti libertatea de a schimba, dar de la bun inceput..
         /// </summary>
         internal static string text1_3 {
             get {
@@ -150,9 +150,7 @@ namespace MemoTricks {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to    Aceasta este o lista cu imaginile pe care le-am asociat noi fiecarui numar.
-        ///  De retinut ! (Aceste imagini nu se vor modifica, ci numai informatiile atasate lor).
-        ///  Totusi, daca doriti o alta imagine mai semnificativa, aveti libertatea de a schimba, dar de la bun inceput..
+        ///   Looks up a localized string similar to .
         /// </summary>
         internal static string text1_5 {
             get {

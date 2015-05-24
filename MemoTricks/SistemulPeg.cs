@@ -40,22 +40,24 @@ namespace MemoTricks
                     case 1:
                         {
                             LeftText.Text = Texte1.text1_1;
-                            LeftText.Font = new Font("Arial", 16);
+                            pictureBox1.BackgroundImage = Imagini1.Cuier;
+
 
                             break;
                         }
                     case 2:
                         {
                             LeftText.Text = Texte1.text1_2;
-                            pictureBox1.BackgroundImage = Imagini1.Cuier;
+                          
 
-                            LeftText.Font = new Font("Arial", 14);
+                           
                             break;
                         }
                     case 3:
                         {
                             LeftText.Text = Texte1.text1_3;
-                            LeftText.Font = new Font("Arial", 16);
+                            pictureBoxLista.BackgroundImage = Imagini1._1_img;
+                            pictureBoxLista.Visible = true;
 
                             break;
                         }
@@ -69,14 +71,13 @@ namespace MemoTricks
                     case 5:
                         {
                             LeftText.Text = Texte1.text1_5;
-                            pictureBoxLista.BackgroundImage = Imagini1._1_img;
-                            pictureBoxLista.Visible = true;
+                            
                             break;
                         }
 
 
                 }
-                if (slide == 2 || slide == 4)
+                if (slide == 1 || slide == 4)
                 {
                     
                     pictureBox1.Visible = true;
@@ -85,12 +86,12 @@ namespace MemoTricks
                     pictureBox1.Visible = false;
                 
                 
-                if (slide >= 5)
+                if (slide == 3)
                     pictureBoxLista.Visible = true;
                 else
                     pictureBoxLista.Visible = false;
 
-                if (slide == 5)
+                if (slide == 3)
                 {
                     _image = 1;
                     previous.Visible = true;
@@ -120,22 +121,23 @@ namespace MemoTricks
                     case 1:
                         {
                             LeftText.Text = Texte1.text1_1;
-                            LeftText.Font = new Font("Arial", 16);
+                            pictureBox1.BackgroundImage = Imagini1.Cuier;
 
                             break;
                         }
                     case 2:
                         {
                             LeftText.Text = Texte1.text1_2;
-                            pictureBox1.BackgroundImage = Imagini1.Cuier;
+                            
 
-                            LeftText.Font = new Font("Arial", 14);
+                           
                             break;
                         }
                     case 3:
                         {
                             LeftText.Text = Texte1.text1_3;
-                            LeftText.Font = new Font("Arial", 16);
+                            pictureBoxLista.BackgroundImage = Imagini1._1_img;
+                            pictureBoxLista.Visible = true;
 
                             break;
                         }
@@ -149,14 +151,13 @@ namespace MemoTricks
                     case 5:
                         {
                             LeftText.Text = Texte1.text1_5;
-                            pictureBoxLista.BackgroundImage = Imagini1._1_img;
-                            pictureBoxLista.Visible = true;
+                           
                             break;
                         }
 
 
                 }
-                if (slide == 2 || slide == 4)
+                if (slide == 1 || slide == 4)
                 {
                    
                     pictureBox1.Visible = true;
@@ -166,12 +167,12 @@ namespace MemoTricks
 
                 
 
-                if (slide >= 5)
+                if (slide == 3)
                     pictureBoxLista.Visible = true;
                 else
                     pictureBoxLista.Visible = false;
 
-                if (slide == 5)
+                if (slide == 3)
                 {
                     _image = 1;
                     previous.Visible = true;
@@ -236,7 +237,11 @@ namespace MemoTricks
         private void SistemulPeg_Load(object sender, EventArgs e)
         {
             SetBorders();
+            LeftText.Text = Texte1.text1_1;
+            pictureBox1.BackgroundImage = Imagini1.Cuier;
+            pictureBox1.Visible = true;
         }
+
 
         void SetBorders()
         {
