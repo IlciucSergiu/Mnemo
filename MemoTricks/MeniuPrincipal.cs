@@ -51,5 +51,11 @@ namespace MemoTricks
             }
 
         }
+
+        private void MeniuPrincipal_Load(object sender, EventArgs e)
+        {
+            homeInfo.Text = Texte1.home_info;
+            homeInfo2.Text = Texte1.home_info_2;  
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace MemoTricks
 
             //StreamReader sReader = new StreamReader(Application.StartupPath + "\\Cuvinte.txt");
             //wordsList = sReader.ReadToEnd();
-            wordsList = Texte1.text_cuvinte;
+            wordsList = Texte1.text_words;
 
             foreach (string word in wordsList.Split('\n'))
             {

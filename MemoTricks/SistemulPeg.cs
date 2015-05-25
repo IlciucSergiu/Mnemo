@@ -84,8 +84,12 @@ namespace MemoTricks
                 }
                 else
                     pictureBox1.Visible = false;
-                
-                
+
+                if (slide == 5)
+                    practiceButton.Visible = true;
+                else
+                    practiceButton.Visible = false;
+
                 if (slide == 3)
                     pictureBoxLista.Visible = true;
                 else
@@ -253,8 +257,33 @@ namespace MemoTricks
             button1.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
             button2.FlatAppearance.BorderSize = 0;
+            practiceButton.FlatStyle = FlatStyle.Flat;
+            practiceButton.FlatAppearance.BorderSize = 0;
+            menuButton.FlatStyle = FlatStyle.Flat;
+            menuButton.FlatAppearance.BorderSize = 0;
+
             //previous.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255); //Transparent
             
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void practiceButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            TestPeg testPegForm = new TestPeg();
+            this.Hide();
+            testPegForm.StartPosition = FormStartPosition.Manual;
+            testPegForm.Location = new Point(this.Location.X, this.Location.Y);
+
+            if (testPegForm.ShowDialog() == DialogResult.Cancel)
+            {
+                this.Show();
+            }
         }
 
     }

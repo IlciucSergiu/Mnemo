@@ -1,0 +1,4 @@
+  Un sistem peg este o tehnica folositoare pentru memorarea unei liste de obiecte, nu foarte mare.
+  Functioneaza prin asocierea obiectelor din lista pe care vrem sa o memoram, cu obiectele dintr-o alta lista bine cunoscuta.
+  O asemenea lista ar fi numerele de la 1 la 10, literele de la A la Z deoarece nu pot fi uitate. Problema cu aceste liste este ca 
+sunt abstracte (greu de visualizat), deaceea vom asocia fiecarui numar o imagine semnificativa.

@@ -65,6 +65,12 @@
     <Compile Include="SistemulPeg.Designer.cs">
       <DependentUpon>SistemulPeg.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubmitPeg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmitPeg.Designer.cs">
+      <DependentUpon>SubmitPeg.cs</DependentUpon>
+    </Compile>
     <Compile Include="TestPeg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     </Compile>
     <EmbeddedResource Include="SistemulPeg.resx">
       <DependentUpon>SistemulPeg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmitPeg.resx">
+      <DependentUpon>SubmitPeg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TestPeg.resx">
       <DependentUpon>TestPeg.cs</DependentUpon>
@@ -183,6 +192,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\img5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baraSusFaina2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baraSusFaina3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

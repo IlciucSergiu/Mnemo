@@ -38,6 +38,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.LeftText = new System.Windows.Forms.Label();
+            this.menuButton = new System.Windows.Forms.Button();
+            this.practiceButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -82,9 +84,9 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(156)))), ((int)(((byte)(33)))));
-            this.label2.Location = new System.Drawing.Point(1, 507);
+            this.label2.Location = new System.Drawing.Point(-4, 507);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(319, 54);
+            this.label2.Size = new System.Drawing.Size(324, 54);
             this.label2.TabIndex = 11;
             // 
             // pictureBoxLista
@@ -128,7 +130,7 @@
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.Location = new System.Drawing.Point(-2, -3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(886, 46);
+            this.label1.Size = new System.Drawing.Size(890, 46);
             this.label1.TabIndex = 10;
             this.label1.Text = "Sistemul Peg (cuier)";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -144,12 +146,40 @@
             this.LeftText.Size = new System.Drawing.Size(321, 464);
             this.LeftText.TabIndex = 0;
             // 
+            // menuButton
+            // 
+            this.menuButton.BackColor = System.Drawing.Color.White;
+            this.menuButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(223)))), ((int)(((byte)(141)))));
+            this.menuButton.Location = new System.Drawing.Point(731, 6);
+            this.menuButton.Name = "menuButton";
+            this.menuButton.Size = new System.Drawing.Size(75, 31);
+            this.menuButton.TabIndex = 12;
+            this.menuButton.Text = "Meniu";
+            this.menuButton.UseVisualStyleBackColor = false;
+            this.menuButton.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // practiceButton
+            // 
+            this.practiceButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(156)))), ((int)(((byte)(33)))));
+            this.practiceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.practiceButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(223)))), ((int)(((byte)(141)))));
+            this.practiceButton.Location = new System.Drawing.Point(576, 501);
+            this.practiceButton.Name = "practiceButton";
+            this.practiceButton.Size = new System.Drawing.Size(115, 48);
+            this.practiceButton.TabIndex = 13;
+            this.practiceButton.Text = "Exerseaza";
+            this.practiceButton.UseVisualStyleBackColor = false;
+            this.practiceButton.Visible = false;
+            this.practiceButton.Click += new System.EventHandler(this.practiceButton_Click);
+            // 
             // SistemulPeg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.practiceButton);
+            this.Controls.Add(this.menuButton);
             this.Controls.Add(this.next);
             this.Controls.Add(this.previous);
             this.Controls.Add(this.pictureBoxLista);
@@ -180,5 +210,7 @@
         private System.Windows.Forms.Button next;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button menuButton;
+        private System.Windows.Forms.Button practiceButton;
     }
 }

@@ -61,6 +61,46 @@ namespace MemoTricks {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to    Un sistem mnemonic este un sistem care face memorarea usoara, rapida si distractiva. 
+        ///   Oamenilor le e greu sa isi aminteasca liste aleatorii de cuvinte, sau lucruri abstracte cum ar fi numerele sau cartile de joc, dar sunt excelenti cand vine vorba de imagini sau informatii spatiale. 
+        ///   Tehnicile de memorare profita de acest lucru.
+        ///
+        ///                                                                                                                              .
+        /// </summary>
+        internal static string home_info {
+            get {
+                return ResourceManager.GetString("home_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tot ce ai nevoie este putina imaginatie..
+        /// </summary>
+        internal static string home_info_2 {
+            get {
+                return ResourceManager.GetString("home_info_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Memoreaza aceasta lista de obiecte folosind sistemul Peg.                    .
+        /// </summary>
+        internal static string text_info_1 {
+            get {
+                return ResourceManager.GetString("text_info_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bifeaza butonul &quot;Imagine&quot; in cazul in care nu iti amintesti imaginea corespunzatoare numarului..
+        /// </summary>
+        internal static string text_info_2 {
+            get {
+                return ResourceManager.GetString("text_info_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to casa
         ///masina
         ///aspirator
@@ -85,32 +125,15 @@ namespace MemoTricks {
         ///radio
         ///pahar.
         /// </summary>
-        internal static string text_cuvinte {
+        internal static string text_words {
             get {
-                return ResourceManager.GetString("text_cuvinte", resourceCulture);
+                return ResourceManager.GetString("text_words", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Memoreaza aceasta lista de obiecte folosind sistemul Peg.                    .
-        /// </summary>
-        internal static string text_info_1 {
-            get {
-                return ResourceManager.GetString("text_info_1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Bifeaza butonul &quot;Imagine&quot; in cazul in care nu iti amintesti imaginea corespunzatoare numarului..
-        /// </summary>
-        internal static string text_info_2 {
-            get {
-                return ResourceManager.GetString("text_info_2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Un sistem peg este o tehnica folositoare pentru memorarea unei liste de obiecte, nu foarte mare..
+        ///   Looks up a localized string similar to     Un sistem peg este o tehnica folositoare pentru memorarea unei liste de obiecte, nu foarte mare.
+        ///    Un “peg” (cuier) este un carlig mintal in care agatam informatia de care avem nevoie.                                                                                                                    // unele specificatii despre dificultatea tehnicii.
         /// </summary>
         internal static string text1_1 {
             get {
@@ -120,8 +143,7 @@ namespace MemoTricks {
         
         /// <summary>
         ///   Looks up a localized string similar to Functioneaza prin asocierea obiectelor din lista pe care vrem sa o memoram, cu obiectele dintr-o alta lista bine cunoscuta.
-        ///  O asemenea lista ar fi numerele de la 1 la 10, literele de la A la Z deoarece nu pot fi uitate. Problema cu aceste liste este ca 
-        ///sunt abstracte (greu de visualizat), deaceea vom asocia fiecarui numar o imagine semnificativa..
+        ///  O asemenea lista ar fi numerele de la 1 la 10, literele de la A la Z deoarece nu pot fi uitate. Problema cu aceste liste este ca sunt abstracte (greu de visualizat), deaceea vom asocia fiecarui numar o imagine semnificativa..
         /// </summary>
         internal static string text1_2 {
             get {
@@ -130,7 +152,8 @@ namespace MemoTricks {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Aceasta este o lista cu imaginile pe care le-am asociat noi fiecarui numar.
+        ///   Looks up a localized string similar to   Aceasta este o lista cu imaginile pe care le-am asociat noi fiecarui numar.
+        ///  Din pacate aceasta lista trebuie invatata pe de rost, totusi forma imaginilor va face acest lucru foarte simplu.  
         ///  De retinut ! (Aceste imagini nu se vor modifica, ci numai informatiile atasate lor).
         ///  Totusi, daca doriti o alta imagine mai semnificativa, aveti libertatea de a schimba, dar de la bun inceput..
         /// </summary>
@@ -141,7 +164,11 @@ namespace MemoTricks {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Exemplu :.
+        ///   Looks up a localized string similar to Exemplu:
+        ///   Daca al treilea element intr-o lista este o scrisoare, vom proceda in felul urmator :
+        ///   -	Mai intai trebuie sa cunoastem imaginea asociata numarului 3, in cazul acesta un arc.
+        ///   -	Apoi creem o imagine compusa din cele doua elemente.
+        ///   Imaginea poate fi ceva interesant amuzant sau ciudat pentru ca este mai usor de reapelat..
         /// </summary>
         internal static string text1_4 {
             get {

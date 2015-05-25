@@ -117,27 +117,48 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="home_info" xml:space="preserve">
+    <value>   Un sistem mnemonic este un sistem care face memorarea usoara, rapida si distractiva. 
+   Oamenilor le e greu sa isi aminteasca liste aleatorii de cuvinte, sau lucruri abstracte cum ar fi numerele sau cartile de joc, dar sunt excelenti cand vine vorba de imagini sau informatii spatiale. 
+   Tehnicile de memorare profita de acest lucru.
+
+                                                                                                                              </value>
+  </data>
+  <data name="home_info_2" xml:space="preserve">
+    <value>Tot ce ai nevoie este putina imaginatie.</value>
+  </data>
   <data name="text1_1" xml:space="preserve">
-    <value>Un sistem peg este o tehnica folositoare pentru memorarea unei liste de obiecte, nu foarte mare.</value>
+    <value>    Un sistem peg este o tehnica folositoare pentru memorarea unei liste de obiecte, nu foarte mare.
+    Un “peg” (cuier) este un carlig mintal in care agatam informatia de care avem nevoie.                                                                                                                    // unele specificatii despre dificultatea tehnicii</value>
     <comment>Introducere</comment>
   </data>
   <data name="text1_2" xml:space="preserve">
     <value>Functioneaza prin asocierea obiectelor din lista pe care vrem sa o memoram, cu obiectele dintr-o alta lista bine cunoscuta.
-  O asemenea lista ar fi numerele de la 1 la 10, literele de la A la Z deoarece nu pot fi uitate. Problema cu aceste liste este ca 
-sunt abstracte (greu de visualizat), deaceea vom asocia fiecarui numar o imagine semnificativa.</value>
+  O asemenea lista ar fi numerele de la 1 la 10, literele de la A la Z deoarece nu pot fi uitate. Problema cu aceste liste este ca sunt abstracte (greu de visualizat), deaceea vom asocia fiecarui numar o imagine semnificativa.</value>
   </data>
   <data name="text1_3" xml:space="preserve">
-    <value>Aceasta este o lista cu imaginile pe care le-am asociat noi fiecarui numar.
+    <value>  Aceasta este o lista cu imaginile pe care le-am asociat noi fiecarui numar.
+  Din pacate aceasta lista trebuie invatata pe de rost, totusi forma imaginilor va face acest lucru foarte simplu.  
   De retinut ! (Aceste imagini nu se vor modifica, ci numai informatiile atasate lor).
   Totusi, daca doriti o alta imagine mai semnificativa, aveti libertatea de a schimba, dar de la bun inceput.</value>
   </data>
   <data name="text1_4" xml:space="preserve">
-    <value>Exemplu :</value>
+    <value>Exemplu:
+   Daca al treilea element intr-o lista este o scrisoare, vom proceda in felul urmator :
+   -	Mai intai trebuie sa cunoastem imaginea asociata numarului 3, in cazul acesta un arc.
+   -	Apoi creem o imagine compusa din cele doua elemente.
+   Imaginea poate fi ceva interesant amuzant sau ciudat pentru ca este mai usor de reapelat.</value>
   </data>
   <data name="text1_5" xml:space="preserve">
     <value />
   </data>
-  <data name="text_cuvinte" xml:space="preserve">
+  <data name="text_info_1" xml:space="preserve">
+    <value>Memoreaza aceasta lista de obiecte folosind sistemul Peg.                    </value>
+  </data>
+  <data name="text_info_2" xml:space="preserve">
+    <value>Bifeaza butonul "Imagine" in cazul in care nu iti amintesti imaginea corespunzatoare numarului.</value>
+  </data>
+  <data name="text_words" xml:space="preserve">
     <value>casa
 masina
 aspirator
@@ -162,11 +183,5 @@ zid
 radio
 pahar</value>
     <comment>Cuvinte pentru testare</comment>
-  </data>
-  <data name="text_info_1" xml:space="preserve">
-    <value>Memoreaza aceasta lista de obiecte folosind sistemul Peg.                    </value>
-  </data>
-  <data name="text_info_2" xml:space="preserve">
-    <value>Bifeaza butonul "Imagine" in cazul in care nu iti amintesti imaginea corespunzatoare numarului.</value>
   </data>
 </root>
