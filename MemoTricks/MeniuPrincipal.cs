@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace MemoTricks
 {
     public partial class MeniuPrincipal : Form
@@ -19,8 +20,10 @@ namespace MemoTricks
 
         private void button1_Click(object sender, EventArgs e)
         {
+            HideButtons();
+
             learnPeg.Visible = true;
-            testPeg.Visible =  true;
+            practicePeg.Visible =  true;
         }
 
         private void learnPeg_Click(object sender, EventArgs e)
@@ -56,6 +59,34 @@ namespace MemoTricks
         {
             homeInfo.Text = Texte1.home_info;
             homeInfo2.Text = Texte1.home_info_2;  
+        }
+
+        void HideButtons()
+        {
+            practicePeg.Visible = false;
+            practiceLoci.Visible = false;
+            practiceMajor.Visible = false;
+            learnPeg.Visible = false;
+            learnLoci.Visible = false;
+            learnMajor.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            HideButtons();
+
+            learnLoci.Visible = true;
+            practiceLoci.Visible = true;
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            HideButtons();
+
+            learnMajor.Visible = true;
+            practiceMajor.Visible = true;
+           
         }
     }
 }

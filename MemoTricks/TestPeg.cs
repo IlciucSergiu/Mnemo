@@ -19,8 +19,10 @@ namespace MemoTricks
          string[] words = new string[11];
           string[] wordsCheck = new string[11];
          int pos = 0, sec1, min;
+         string time;
         private void start_Click(object sender, EventArgs e)
         {
+            timeLabel.Text = "00:00:00";
             timer1.Start();
             sec1 = 0; min = 0;
             ButtonsVisibleTrue();
@@ -40,6 +42,7 @@ namespace MemoTricks
             label1.Text = pos + ": " + words[1];
             ImageList imgList = new ImageList();
             pictureBoxLista.BackgroundImage = imgList.ReturnImage(pos);
+            finish.Visible = false;
         }
 
         private void next_Click(object sender, EventArgs e)
@@ -178,9 +181,32 @@ namespace MemoTricks
                 ver += i + ". " + words[i].Trim() + " -- " + wordsCheck[i] + "\n";
             }
             ver += "\n";
-           
+            #region Time
+
             
-            MessageBox.Show("Ati raspuns corect la "+ rightAnswers +" din 10 intr-un timp de " + min + ":" + sec1 + "\n"+ ver , "Rezultat ");
+
+            if (sec1 < 10 && min == 0)
+                time = "00:00:0" + sec1;
+            if (sec1 >= 10 && min == 0)
+                time = "00:00:" + sec1;
+            if (sec1 < 10 && min < 10 && min > 0)
+                time = "00:0" + min + ":0" + sec1;
+            if (sec1 < 10 && min > 10)
+                time = "00:" + min + ":0" + sec1;
+            if (sec1 >= 10 && min > 10)
+                time = "00:" + min + ":" + sec1;
+            if (sec1 >= 10 && min < 10 && min > 0)
+                time = "00:0" + min + ":" + sec1;
+            #endregion
+            // MessageBox.Show("Ati raspuns corect la "+ rightAnswers +" din 10 intr-un timp de " + min + ":" + sec1 + "\n"+ ver , "Rezultat ");
+            SubmitPeg submitPeg = new SubmitPeg(rightAnswers, time , ver);
+
+            submitPeg.StartPosition = FormStartPosition.Manual;
+            submitPeg.Location = new Point(this.Location.X + 150, this.Location.Y);
+
+            if (submitPeg.ShowDialog() == System.Windows.Forms.DialogResult.Cancel)
+                this.Close();
+
         }
     }
 }

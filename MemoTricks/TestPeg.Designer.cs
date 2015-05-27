@@ -41,12 +41,12 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timeLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.timeTest = new System.Windows.Forms.Label();
             this.verifyButton = new System.Windows.Forms.Button();
             this.next2 = new System.Windows.Forms.Button();
             this.previous2 = new System.Windows.Forms.Button();
             this.labelPos2 = new System.Windows.Forms.Label();
             this.testTextBox = new System.Windows.Forms.TextBox();
-            this.timeTest = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLista)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -174,6 +174,17 @@
             this.panel1.TabIndex = 10;
             this.panel1.Visible = false;
             // 
+            // timeTest
+            // 
+            this.timeTest.AutoSize = true;
+            this.timeTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeTest.ForeColor = System.Drawing.Color.DarkRed;
+            this.timeTest.Location = new System.Drawing.Point(255, 18);
+            this.timeTest.Name = "timeTest";
+            this.timeTest.Size = new System.Drawing.Size(47, 20);
+            this.timeTest.TabIndex = 5;
+            this.timeTest.Text = "Timp";
+            // 
             // verifyButton
             // 
             this.verifyButton.Location = new System.Drawing.Point(404, 243);
@@ -221,17 +232,6 @@
             this.testTextBox.Size = new System.Drawing.Size(122, 20);
             this.testTextBox.TabIndex = 0;
             this.testTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // timeTest
-            // 
-            this.timeTest.AutoSize = true;
-            this.timeTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeTest.ForeColor = System.Drawing.Color.DarkRed;
-            this.timeTest.Location = new System.Drawing.Point(255, 18);
-            this.timeTest.Name = "timeTest";
-            this.timeTest.Size = new System.Drawing.Size(47, 20);
-            this.timeTest.TabIndex = 5;
-            this.timeTest.Text = "Timp";
             // 
             // TestPeg
             // 

@@ -130,9 +130,6 @@
   <data name="textBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\textBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_10_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Img 10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="_1_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\1 imagine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -171,5 +168,8 @@
   </data>
   <data name="baraSus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\baraSusFaina3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_10_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\img10_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
