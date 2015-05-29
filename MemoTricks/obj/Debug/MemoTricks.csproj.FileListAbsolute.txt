@@ -34,3 +34,5 @@ D:\CLASE\Sergiu\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.MeniuPrincipal.reso
 C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.SistemulPeg.resources
 C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.MeniuPrincipal.resources
 C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.SubmitPeg.resources
+C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.SistemulLoci.resources
+C:\Sergiu\Programe\CSharp\Proiecte\Infoeducatie\MemoryTricks\MemoTricks\obj\Debug\MemoTricks.Imagini2.resources

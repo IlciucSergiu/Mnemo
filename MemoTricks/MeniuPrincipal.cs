@@ -88,5 +88,18 @@ namespace MemoTricks
             practiceMajor.Visible = true;
            
         }
+
+        private void learnLoci_Click(object sender, EventArgs e)
+        {
+            SistemulLoci sistemulLoci = new SistemulLoci();
+            this.Hide();
+            sistemulLoci.StartPosition = FormStartPosition.Manual;
+            sistemulLoci.Location = new Point(this.Location.X, this.Location.Y);
+
+            if (sistemulLoci.ShowDialog() == DialogResult.Cancel)
+            {
+                this.Show();
+            }
+        }
     }
 }

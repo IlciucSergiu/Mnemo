@@ -57,6 +57,7 @@ namespace MemoTricks
             if (pos == 10)
                 finish.Visible = true;
             
+            
         }
 
         private void previous_Click(object sender, EventArgs e)
@@ -129,6 +130,9 @@ namespace MemoTricks
             timer1.Stop();
             panel1.Visible = true;
             timeTest.Text = timeLabel.Text;
+            pictureBoxLista.BringToFront();
+            pos = 1;
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -140,7 +144,14 @@ namespace MemoTricks
 
         private void previous2_Click(object sender, EventArgs e)
         {
-            
+            if (pos > 1)
+            {
+                pos--;
+                label1.Text = pos + ": " + words[pos];
+                ImageList imgList = new ImageList();
+                pictureBoxLista.BackgroundImage = imgList.ReturnImage(pos);
+            }
+
             if (pos2 > 1)
             {
                 wordsCheck[pos2] = testTextBox.Text.Trim() ;
@@ -153,6 +164,14 @@ namespace MemoTricks
 
         private void next2_Click(object sender, EventArgs e)
         {
+            if (pos < 10)
+            {
+                pos++;
+                label1.Text = pos + ": " + words[pos];
+                ImageList imgList = new ImageList();
+                pictureBoxLista.BackgroundImage = imgList.ReturnImage(pos);
+            }
+
             if (pos2 < 10 )
             {
                 wordsCheck[pos2] = testTextBox.Text.Trim() ;

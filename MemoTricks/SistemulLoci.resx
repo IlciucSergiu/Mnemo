@@ -117,83 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="home_info" xml:space="preserve">
-    <value>   Un sistem mnemonic este un sistem care face memorarea usoara, rapida si distractiva. 
-   Oamenilor le e greu sa isi aminteasca liste aleatorii de cuvinte, sau lucruri abstracte cum ar fi numerele sau cartile de joc, dar sunt excelenti cand vine vorba de imagini sau informatii spatiale. 
-   Tehnicile de memorare profita de acest lucru.
-
-                                                                                                                              </value>
-  </data>
-  <data name="home_info_2" xml:space="preserve">
-    <value>Tot ce ai nevoie este putina imaginatie.</value>
-  </data>
-  <data name="text1_1" xml:space="preserve">
-    <value>    Un sistem peg este o tehnica folositoare pentru memorarea unei liste de obiecte, nu foarte mare.
-    Un “peg” (cuier) este un carlig mintal in care agatam informatia de care avem nevoie.                                                                                                                    // unele specificatii despre dificultatea tehnicii</value>
-    <comment>Introducere</comment>
-  </data>
-  <data name="text1_2" xml:space="preserve">
-    <value>Functioneaza prin asocierea obiectelor din lista pe care vrem sa o memoram, cu obiectele dintr-o alta lista bine cunoscuta.
-  O asemenea lista ar fi numerele de la 1 la 10, literele de la A la Z deoarece nu pot fi uitate. Problema cu aceste liste este ca sunt abstracte (greu de visualizat), deaceea vom asocia fiecarui numar o imagine semnificativa.</value>
-  </data>
-  <data name="text1_3" xml:space="preserve">
-    <value>  Aceasta este o lista cu imaginile pe care le-am asociat noi fiecarui numar.
-  Din pacate aceasta lista trebuie invatata pe de rost, totusi forma imaginilor va face acest lucru foarte simplu.  
-  De retinut ! (Aceste imagini nu se vor modifica, ci numai informatiile atasate lor).
-  Totusi, daca doriti o alta imagine mai semnificativa, aveti libertatea de a schimba, dar de la bun inceput.</value>
-  </data>
-  <data name="text1_4" xml:space="preserve">
-    <value>Exemplu:
-   Daca al treilea element intr-o lista este o scrisoare, vom proceda in felul urmator :
-   -	Mai intai trebuie sa cunoastem imaginea asociata numarului 3, in cazul acesta un arc.
-   -	Apoi creem o imagine compusa din cele doua elemente.
-   Imaginea poate fi ceva interesant amuzant sau ciudat pentru ca este mai usor de reapelat.</value>
-  </data>
-  <data name="text1_5" xml:space="preserve">
-    <value />
-  </data>
-  <data name="text2_1" xml:space="preserve">
+  <data name="labelText1.Text" xml:space="preserve">
     <value>    Metoda loci ( in latina “locuri” ), de asemenea numita palatul memoriei , este o tehnica existenta inca din Roma antica folosita de oratori renumiti precum Cicero si Quintilianus , fiind cunoscuta si sub numele de “Camera romana”.
     Asemenea metodei Peg, foloseste vizualizarea pentru a organiza si reaminti informatii. In acest caz, in loc de a folosi o lista memorata foloseste unele obiecte situate in locuri specifice, binecunoscute de utilizator pentru a aseza informatia.</value>
-  </data>
-  <data name="text2_2" xml:space="preserve">
-    <value>    In cazul camerei romane, vom folosi imaginea unei camere in care va trebui mai intai sa stabilim ordinea exacta a pozitiilor in care vom aseza obiectele. Apoi vom pozitiona fiecare obiect din lista care trebuie memorata in locul corespunzator.
-    Cand avem nevoie sa ne reamintim obiectele, nu trebuie decat sa parcurgem camera, vizualizand obiectele asezate acolo anterior.</value>
-  </data>
-  <data name="text2_3" xml:space="preserve">
-    <value>  De exemplu, daca avem obiectele : inghetata, ursulet de plus si zmeu, vom organiza imaginea astfel…
-    Cel mai mare beneficiu este ca folosind aceasta tehnica nu ai limita cand vine vorba de numarul de obiecte memorate, deoarece harta nu trebuie sa fie limitata doar la o camera.  Mai are denumirea si de “metoda calatoriei” deoarece folosind aceleasi principii, poti folosi o ruta binecunoscuta pe post de  harta mintala.</value>
-  </data>
-  <data name="text_info_1" xml:space="preserve">
-    <value>Memoreaza aceasta lista de obiecte folosind sistemul Peg.                    </value>
-  </data>
-  <data name="text_info_2" xml:space="preserve">
-    <value>Bifeaza butonul "Imagine" in cazul in care nu iti amintesti imaginea corespunzatoare numarului.</value>
-  </data>
-  <data name="text_words" xml:space="preserve">
-    <value>casa
-masina
-aspirator
-laptop
-cutit
-sticla
-lant
-paine
-umbrela
-creion
-carte
-palarie
-copac
-papuc
-tun
-pistol
-minge
-ochelari
-tren
-scrisoare
-zid
-radio
-pahar</value>
-    <comment>Cuvinte pentru testare</comment>
   </data>
 </root>

@@ -184,5 +184,35 @@ namespace MemoTricks {
                 return ResourceManager.GetString("text1_5", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to     Metoda loci ( in latina “locuri” ), de asemenea numita palatul memoriei , este o tehnica existenta inca din Roma antica folosita de oratori renumiti precum Cicero si Quintilianus , fiind cunoscuta si sub numele de “Camera romana”.
+        ///    Asemenea metodei Peg, foloseste vizualizarea pentru a organiza si reaminti informatii. In acest caz, in loc de a folosi o lista memorata foloseste unele obiecte situate in locuri specifice, binecunoscute de utilizator pentru a aseza informatia..
+        /// </summary>
+        internal static string text2_1 {
+            get {
+                return ResourceManager.GetString("text2_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to     In cazul camerei romane, vom folosi imaginea unei camere in care va trebui mai intai sa stabilim ordinea exacta a pozitiilor in care vom aseza obiectele. Apoi vom pozitiona fiecare obiect din lista care trebuie memorata in locul corespunzator.
+        ///    Cand avem nevoie sa ne reamintim obiectele, nu trebuie decat sa parcurgem camera, vizualizand obiectele asezate acolo anterior..
+        /// </summary>
+        internal static string text2_2 {
+            get {
+                return ResourceManager.GetString("text2_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   De exemplu, daca avem obiectele : inghetata, ursulet de plus si zmeu, vom organiza imaginea astfel…
+        ///    Cel mai mare beneficiu este ca folosind aceasta tehnica nu ai limita cand vine vorba de numarul de obiecte memorate, deoarece harta nu trebuie sa fie limitata doar la o camera.  Mai are denumirea si de “metoda calatoriei” deoarece folosind aceleasi principii, poti folosi o ruta binecunoscuta pe post de  harta mintala..
+        /// </summary>
+        internal static string text2_3 {
+            get {
+                return ResourceManager.GetString("text2_3", resourceCulture);
+            }
+        }
     }
 }

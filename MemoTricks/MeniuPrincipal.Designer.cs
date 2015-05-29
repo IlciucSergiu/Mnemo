@@ -130,6 +130,7 @@
             this.learnLoci.Text = "Invata";
             this.learnLoci.UseVisualStyleBackColor = true;
             this.learnLoci.Visible = false;
+            this.learnLoci.Click += new System.EventHandler(this.learnLoci_Click);
             // 
             // practiceMajor
             // 
