@@ -32,7 +32,7 @@ namespace MemoTricks
             // primirea cuvintelor aleatorii
             RandomWords cv = new RandomWords();
             
-               cv.SetWords();
+               cv.SetWords("peg");
             for (int i = 1; i <= 10; i++)
             {
                 words[i] = cv.GetWords();

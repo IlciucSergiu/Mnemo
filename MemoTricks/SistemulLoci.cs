@@ -64,7 +64,21 @@ namespace MemoTricks
                         break;
                     }
 
+                case 4:
+                    {
+                        pictureBoxLearn1.BackgroundImage = null;
+                        labelText1.Text = Texte1.text2_4;
+                        break;
+                    }
+
+                    
+
             }
+            if (slide == 4)
+            {
+                buttonPractice.Visible = true;
+            }
+            else { buttonPractice.Visible = false; }
         }
 
        

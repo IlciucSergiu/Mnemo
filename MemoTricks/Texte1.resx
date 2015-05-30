@@ -164,13 +164,39 @@
     <value>  De exemplu, daca avem obiectele : inghetata, ursulet de plus si zmeu, vom organiza imaginea astfel…
     Cel mai mare beneficiu este ca folosind aceasta tehnica nu ai limita cand vine vorba de numarul de obiecte memorate, deoarece harta nu trebuie sa fie limitata doar la o camera.  Mai are denumirea si de “metoda calatoriei” deoarece folosind aceleasi principii, poti folosi o ruta binecunoscuta pe post de  harta mintala.</value>
   </data>
+  <data name="text2_4" xml:space="preserve">
+    <value>  Pentru a exersa aceasta tehnica, incearca Provocarea Jucariilor.</value>
+  </data>
   <data name="text_info_1" xml:space="preserve">
     <value>Memoreaza aceasta lista de obiecte folosind sistemul Peg.                    </value>
   </data>
   <data name="text_info_2" xml:space="preserve">
     <value>Bifeaza butonul "Imagine" in cazul in care nu iti amintesti imaginea corespunzatoare numarului.</value>
   </data>
-  <data name="text_words" xml:space="preserve">
+  <data name="text_words_TestLoci" xml:space="preserve">
+    <value>castel
+puzzle
+rata
+trompeta
+avion
+cal
+skateboard
+tren
+zmeu
+papusa
+catel
+masina
+pistol
+yoyo
+vapor
+urs
+robot
+minge
+dinozaur
+telefon
+coarda</value>
+  </data>
+  <data name="text_words_TestPeg" xml:space="preserve">
     <value>casa
 masina
 aspirator

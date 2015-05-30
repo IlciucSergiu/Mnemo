@@ -34,6 +34,7 @@
             this.buttonPrevious = new System.Windows.Forms.Button();
             this.buttonNext = new System.Windows.Forms.Button();
             this.pictureBoxLearn1 = new System.Windows.Forms.PictureBox();
+            this.buttonPractice = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLearn1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,18 +87,29 @@
             this.pictureBoxLearn1.TabIndex = 5;
             this.pictureBoxLearn1.TabStop = false;
             // 
+            // buttonPractice
+            // 
+            this.buttonPractice.Location = new System.Drawing.Point(579, 470);
+            this.buttonPractice.Name = "buttonPractice";
+            this.buttonPractice.Size = new System.Drawing.Size(116, 40);
+            this.buttonPractice.TabIndex = 6;
+            this.buttonPractice.Text = "Exerseaza";
+            this.buttonPractice.UseVisualStyleBackColor = true;
+            this.buttonPractice.Visible = false;
+            // 
             // SistemulLoci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.buttonPractice);
             this.Controls.Add(this.pictureBoxLearn1);
             this.Controls.Add(this.buttonNext);
             this.Controls.Add(this.buttonPrevious);
             this.Controls.Add(this.labelText1);
             this.Controls.Add(this.labelTitle);
             this.Name = "SistemulLoci";
-            this.Text = "<";
+            this.Text = "Loci";
             this.Load += new System.EventHandler(this.SistemulLoci_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLearn1)).EndInit();
             this.ResumeLayout(false);
@@ -112,5 +124,6 @@
         private System.Windows.Forms.Button buttonPrevious;
         private System.Windows.Forms.Button buttonNext;
         private System.Windows.Forms.PictureBox pictureBoxLearn1;
+        private System.Windows.Forms.Button buttonPractice;
     }
 }

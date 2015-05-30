@@ -101,6 +101,35 @@ namespace MemoTricks {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to castel
+        ///puzzle
+        ///rata
+        ///trompeta
+        ///avion
+        ///cal
+        ///skateboard
+        ///tren
+        ///zmeu
+        ///papusa
+        ///catel
+        ///masina
+        ///pistol
+        ///yoyo
+        ///vapor
+        ///urs
+        ///robot
+        ///minge
+        ///dinozaur
+        ///telefon
+        ///coarda.
+        /// </summary>
+        internal static string text_words_TestLoci {
+            get {
+                return ResourceManager.GetString("text_words_TestLoci", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to casa
         ///masina
         ///aspirator
@@ -125,9 +154,9 @@ namespace MemoTricks {
         ///radio
         ///pahar.
         /// </summary>
-        internal static string text_words {
+        internal static string text_words_TestPeg {
             get {
-                return ResourceManager.GetString("text_words", resourceCulture);
+                return ResourceManager.GetString("text_words_TestPeg", resourceCulture);
             }
         }
         
@@ -212,6 +241,15 @@ namespace MemoTricks {
         internal static string text2_3 {
             get {
                 return ResourceManager.GetString("text2_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Pentru a exersa aceasta tehnica, incearca Provocarea Jucariilor..
+        /// </summary>
+        internal static string text2_4 {
+            get {
+                return ResourceManager.GetString("text2_4", resourceCulture);
             }
         }
     }

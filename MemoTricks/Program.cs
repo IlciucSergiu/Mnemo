@@ -16,7 +16,7 @@ namespace MemoTricks
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MeniuPrincipal());
+            Application.Run(new TestLoci());
         }
     }
 }
