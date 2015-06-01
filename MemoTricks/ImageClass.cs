@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace MemoTricks
 {
-    class ImageList
+    class ImageClass
     {
         public Image ReturnImage(int _image)
         {
@@ -69,6 +69,14 @@ namespace MemoTricks
             }
             #endregion
             return img;
+        }
+        public Bitmap CropImage(Bitmap sourceImage,int x, int y, int width, int height)
+        {
+            Rectangle cropRect = new Rectangle(x, y, width, height);
+             sourceImage = Imagini2.loci_house;
+            Bitmap returnImage = sourceImage.Clone(cropRect, sourceImage.PixelFormat);
+
+            return returnImage;
         }
     }
 }

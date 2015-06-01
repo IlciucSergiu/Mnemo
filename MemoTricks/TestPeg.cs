@@ -20,6 +20,7 @@ namespace MemoTricks
           string[] wordsCheck = new string[11];
          int pos = 0, sec1, min;
          string time;
+       // Butonul start
         private void start_Click(object sender, EventArgs e)
         {
             timeLabel.Text = "00:00:00";
@@ -29,18 +30,21 @@ namespace MemoTricks
             start.Text = "Reincepe";
             info1.Text = Texte1.text_info_1;
             info2.Text = Texte1.text_info_2;
-            // primirea cuvintelor aleatorii
+
+            // Primirea cuvintelor aleatorii
             RandomWords cv = new RandomWords();
             
+            // Setarea cuvintelor in vector
                cv.SetWords("peg");
             for (int i = 1; i <= 10; i++)
             {
+                // Primirea cuvintelor din vector in ordine aleatorie
                 words[i] = cv.GetWords();
-                //MessageBox.Show(cv.GetWords());
+                
             }
             pos = 1;
             label1.Text = pos + ": " + words[1];
-            ImageList imgList = new ImageList();
+            ImageClass imgList = new ImageClass();
             pictureBoxLista.BackgroundImage = imgList.ReturnImage(pos);
             finish.Visible = false;
         }
@@ -51,7 +55,7 @@ namespace MemoTricks
             {
                 pos++;
                 label1.Text = pos +": "+ words[pos];
-                ImageList imgList = new ImageList();
+                ImageClass imgList = new ImageClass();
                 pictureBoxLista.BackgroundImage = imgList.ReturnImage(pos);
             }
             if (pos == 10)
@@ -66,7 +70,7 @@ namespace MemoTricks
             {
                 pos--;
                 label1.Text = pos + ": " + words[pos];
-                ImageList imgList = new ImageList();
+                ImageClass imgList = new ImageClass();
                 pictureBoxLista.BackgroundImage = imgList.ReturnImage(pos);
             }
         }
@@ -132,6 +136,8 @@ namespace MemoTricks
             timeTest.Text = timeLabel.Text;
             pictureBoxLista.BringToFront();
             pos = 1;
+            ImageClass imgList = new ImageClass();
+            pictureBoxLista.BackgroundImage = imgList.ReturnImage(pos);
 
         }
 
@@ -148,7 +154,7 @@ namespace MemoTricks
             {
                 pos--;
                 label1.Text = pos + ": " + words[pos];
-                ImageList imgList = new ImageList();
+                ImageClass imgList = new ImageClass();
                 pictureBoxLista.BackgroundImage = imgList.ReturnImage(pos);
             }
 
@@ -168,7 +174,7 @@ namespace MemoTricks
             {
                 pos++;
                 label1.Text = pos + ": " + words[pos];
-                ImageList imgList = new ImageList();
+                ImageClass imgList = new ImageClass();
                 pictureBoxLista.BackgroundImage = imgList.ReturnImage(pos);
             }
 

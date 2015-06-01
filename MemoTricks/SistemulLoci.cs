@@ -81,6 +81,20 @@ namespace MemoTricks
             else { buttonPractice.Visible = false; }
         }
 
+        private void buttonPractice_Click(object sender, EventArgs e)
+        {
+            TestLoci testLociForm = new TestLoci();
+
+            this.Hide();
+            testLociForm.StartPosition = FormStartPosition.Manual;
+            testLociForm.Location = new Point(this.Location.X, this.Location.Y);
+
+            if (testLociForm.ShowDialog() == DialogResult.Cancel)
+            {
+                this.Close();
+            }
+        }
+
        
 
 

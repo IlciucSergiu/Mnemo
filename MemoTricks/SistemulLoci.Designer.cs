@@ -96,6 +96,7 @@
             this.buttonPractice.Text = "Exerseaza";
             this.buttonPractice.UseVisualStyleBackColor = true;
             this.buttonPractice.Visible = false;
+            this.buttonPractice.Click += new System.EventHandler(this.buttonPractice_Click);
             // 
             // SistemulLoci
             // 

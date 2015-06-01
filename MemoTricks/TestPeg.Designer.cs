@@ -45,8 +45,8 @@
             this.verifyButton = new System.Windows.Forms.Button();
             this.next2 = new System.Windows.Forms.Button();
             this.previous2 = new System.Windows.Forms.Button();
-            this.labelPos2 = new System.Windows.Forms.Label();
             this.testTextBox = new System.Windows.Forms.TextBox();
+            this.labelPos2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLista)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -126,9 +126,9 @@
             // 
             this.pictureBoxLista.BackgroundImage = global::MemoTricks.Imagini1.Cuier;
             this.pictureBoxLista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxLista.Location = new System.Drawing.Point(562, 165);
+            this.pictureBoxLista.Location = new System.Drawing.Point(432, 113);
             this.pictureBoxLista.Name = "pictureBoxLista";
-            this.pictureBoxLista.Size = new System.Drawing.Size(281, 182);
+            this.pictureBoxLista.Size = new System.Drawing.Size(414, 263);
             this.pictureBoxLista.TabIndex = 7;
             this.pictureBoxLista.TabStop = false;
             this.pictureBoxLista.Visible = false;
@@ -216,6 +216,14 @@
             this.previous2.UseVisualStyleBackColor = true;
             this.previous2.Click += new System.EventHandler(this.previous2_Click);
             // 
+            // testTextBox
+            // 
+            this.testTextBox.Location = new System.Drawing.Point(173, 262);
+            this.testTextBox.Name = "testTextBox";
+            this.testTextBox.Size = new System.Drawing.Size(122, 20);
+            this.testTextBox.TabIndex = 0;
+            this.testTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // labelPos2
             // 
             this.labelPos2.AutoSize = true;
@@ -225,14 +233,6 @@
             this.labelPos2.Size = new System.Drawing.Size(25, 25);
             this.labelPos2.TabIndex = 1;
             this.labelPos2.Text = "1";
-            // 
-            // testTextBox
-            // 
-            this.testTextBox.Location = new System.Drawing.Point(173, 262);
-            this.testTextBox.Name = "testTextBox";
-            this.testTextBox.Size = new System.Drawing.Size(122, 20);
-            this.testTextBox.TabIndex = 0;
-            this.testTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // TestPeg
             // 

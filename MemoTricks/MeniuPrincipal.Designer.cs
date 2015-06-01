@@ -120,6 +120,7 @@
             this.practiceLoci.Text = "Exerseaza";
             this.practiceLoci.UseVisualStyleBackColor = true;
             this.practiceLoci.Visible = false;
+            this.practiceLoci.Click += new System.EventHandler(this.practiceLoci_Click);
             // 
             // learnLoci
             // 
