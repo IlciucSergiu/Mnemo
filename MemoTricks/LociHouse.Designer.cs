@@ -39,7 +39,7 @@
             this.pictureBoxHouse.BackgroundImage = global::MemoTricks.Imagini2.loci_house;
             this.pictureBoxHouse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxHouse.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxHouse.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxHouse.Location = new System.Drawing.Point(-366, -452);
             this.pictureBoxHouse.Name = "pictureBoxHouse";
             this.pictureBoxHouse.Size = new System.Drawing.Size(1668, 1667);
             this.pictureBoxHouse.TabIndex = 0;
