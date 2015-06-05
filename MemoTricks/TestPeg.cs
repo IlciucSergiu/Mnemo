@@ -23,6 +23,7 @@ namespace MemoTricks
        // Butonul start
         private void start_Click(object sender, EventArgs e)
         {
+            labelTestPegInfo.Visible = false;
             timeLabel.Text = "00:00:00";
             timer1.Start();
             sec1 = 0; min = 0;
@@ -233,5 +234,12 @@ namespace MemoTricks
                 this.Close();
 
         }
+
+        private void TestPeg_Load(object sender, EventArgs e)
+        {
+            labelTestPegInfo.Text = Texte1.text_testPegInfo;
+        }
+
+        
     }
 }

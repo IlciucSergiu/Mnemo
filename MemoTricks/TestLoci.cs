@@ -23,7 +23,8 @@ namespace MemoTricks
 
         private void TestLoci_Load(object sender, EventArgs e)
         {
-            
+
+            labelInfoTestLoci.Text = Texte1.text_testLociInfo;
             ImageClass imgcls = new ImageClass();
 
             pictureBoxHelpImage.BackgroundImage =imgcls.CropImage(Imagini2.loci_house, 0, 0, 500, 500);
@@ -33,6 +34,7 @@ namespace MemoTricks
 
         private void button1_Click(object sender, EventArgs e)
         {
+            labelInfoTestLoci.Visible = false;
             timerTestLoci.Start();
                SetVisible();
             RandomWords randomWords = new RandomWords();
@@ -194,6 +196,8 @@ namespace MemoTricks
             else
                 pictureBoxHelpImage.Visible = false;
         }
+
+        
 
         //Image CropImage(int x, int y, int width, int height)
         //{

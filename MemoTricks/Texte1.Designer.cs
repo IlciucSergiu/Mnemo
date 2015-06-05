@@ -101,6 +101,26 @@ namespace MemoTricks {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to    Pentru acest exercitiu, va trebui sa memorati ordinea a 20 de jucarii. Chiar daca pare intimidant, veti observa ca metoda Loci face aceasta posibil.  
+        ///   Pentru a va ajuta, am pregatit o “harta” in acest caz imaginea unei case. Apasati butonul de mai jos pentru a o vizualiza inainte de a incepe exercitiul..
+        /// </summary>
+        internal static string text_testLociInfo {
+            get {
+                return ResourceManager.GetString("text_testLociInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Pentru exercitiul urmator v-a trebui sa memorati o lista de zece obiecte ordonate aleator folosind metoda Peg apoi sa le redati in exact aceeasi ordine.
+        ///   Scopul este sa aprofundati sceasta tehnica, iar pe parcurs veti observa ca timpul se va imbunatati considerabil..
+        /// </summary>
+        internal static string text_testPegInfo {
+            get {
+                return ResourceManager.GetString("text_testPegInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to castel
         ///puzzle
         ///rata
@@ -162,7 +182,7 @@ namespace MemoTricks {
         
         /// <summary>
         ///   Looks up a localized string similar to     Un sistem peg este o tehnica folositoare pentru memorarea unei liste de obiecte, nu foarte mare.
-        ///    Un “peg” (cuier) este un carlig mintal in care agatam informatia de care avem nevoie.                                                                                                                    // unele specificatii despre dificultatea tehnicii.
+        ///    Un “peg” (cuier) este un carlig mintal in care agatam informatia de care avem nevoie.                      Aceasta este o tehnica usoara si foarte utila..
         /// </summary>
         internal static string text1_1 {
             get {
@@ -206,7 +226,7 @@ namespace MemoTricks {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to    Chiar daca nu este o tehnica prea complicata, necesita exercitiu, de aceea am creat urmatorul exercitiu  care consta in memorarea a zece obiecte dintr-o lista aleatoare..
         /// </summary>
         internal static string text1_5 {
             get {
@@ -245,7 +265,7 @@ namespace MemoTricks {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to   Pentru a exersa aceasta tehnica, incearca Provocarea Jucariilor..
+        ///   Looks up a localized string similar to   Pentru a exersa aceasta tehnica am pregatit un exercitiu  pe care il numim Provocarea Jucariilor..
         /// </summary>
         internal static string text2_4 {
             get {
