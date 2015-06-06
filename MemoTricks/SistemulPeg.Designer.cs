@@ -83,7 +83,7 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(156)))), ((int)(((byte)(33)))));
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(-4, 507);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(324, 54);
@@ -126,8 +126,7 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(223)))), ((int)(((byte)(141)))));
-            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(-2, -3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(890, 46);
@@ -137,19 +136,19 @@
             // 
             // LeftText
             // 
-            this.LeftText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(156)))), ((int)(((byte)(33)))));
+            this.LeftText.BackColor = System.Drawing.SystemColors.Control;
             this.LeftText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeftText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(223)))), ((int)(((byte)(141)))));
-            this.LeftText.Image = global::MemoTricks.Imagini1.textBackground;
+            this.LeftText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.LeftText.Location = new System.Drawing.Point(-1, 43);
             this.LeftText.Name = "LeftText";
             this.LeftText.Size = new System.Drawing.Size(321, 464);
             this.LeftText.TabIndex = 0;
+            this.LeftText.Text = resources.GetString("LeftText.Text");
             // 
             // menuButton
             // 
-            this.menuButton.BackColor = System.Drawing.Color.White;
-            this.menuButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(223)))), ((int)(((byte)(141)))));
+            this.menuButton.BackColor = System.Drawing.SystemColors.Control;
+            this.menuButton.ForeColor = System.Drawing.Color.Black;
             this.menuButton.Location = new System.Drawing.Point(731, 6);
             this.menuButton.Name = "menuButton";
             this.menuButton.Size = new System.Drawing.Size(75, 31);
@@ -160,9 +159,9 @@
             // 
             // practiceButton
             // 
-            this.practiceButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(156)))), ((int)(((byte)(33)))));
+            this.practiceButton.BackColor = System.Drawing.SystemColors.Control;
             this.practiceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.practiceButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(223)))), ((int)(((byte)(141)))));
+            this.practiceButton.ForeColor = System.Drawing.Color.Black;
             this.practiceButton.Location = new System.Drawing.Point(576, 501);
             this.practiceButton.Name = "practiceButton";
             this.practiceButton.Size = new System.Drawing.Size(115, 48);
@@ -176,7 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.practiceButton);
             this.Controls.Add(this.menuButton);

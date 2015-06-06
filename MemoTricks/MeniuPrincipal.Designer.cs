@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonPeg = new System.Windows.Forms.Button();
+            this.buttonLoci = new System.Windows.Forms.Button();
+            this.buttonMajor = new System.Windows.Forms.Button();
             this.learnPeg = new System.Windows.Forms.Button();
             this.practicePeg = new System.Windows.Forms.Button();
             this.homeInfo = new System.Windows.Forms.Label();
@@ -41,35 +41,35 @@
             this.learnMajor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonPeg
             // 
-            this.button1.Location = new System.Drawing.Point(73, 102);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 50);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Sistemul Peg";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonPeg.Location = new System.Drawing.Point(73, 102);
+            this.buttonPeg.Name = "buttonPeg";
+            this.buttonPeg.Size = new System.Drawing.Size(190, 50);
+            this.buttonPeg.TabIndex = 0;
+            this.buttonPeg.Text = "Sistemul Peg";
+            this.buttonPeg.UseVisualStyleBackColor = true;
+            this.buttonPeg.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // buttonLoci
             // 
-            this.button2.Location = new System.Drawing.Point(73, 204);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(190, 50);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Sistemul \"loci\"";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonLoci.Location = new System.Drawing.Point(73, 204);
+            this.buttonLoci.Name = "buttonLoci";
+            this.buttonLoci.Size = new System.Drawing.Size(190, 50);
+            this.buttonLoci.TabIndex = 1;
+            this.buttonLoci.Text = "Sistemul  Loci";
+            this.buttonLoci.UseVisualStyleBackColor = true;
+            this.buttonLoci.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // buttonMajor
             // 
-            this.button3.Location = new System.Drawing.Point(73, 322);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(190, 50);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Sistemul major";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonMajor.Location = new System.Drawing.Point(73, 322);
+            this.buttonMajor.Name = "buttonMajor";
+            this.buttonMajor.Size = new System.Drawing.Size(190, 50);
+            this.buttonMajor.TabIndex = 2;
+            this.buttonMajor.Text = "Sistemul Major";
+            this.buttonMajor.UseVisualStyleBackColor = true;
+            this.buttonMajor.Click += new System.EventHandler(this.button3_Click);
             // 
             // learnPeg
             // 
@@ -104,7 +104,7 @@
             // 
             // homeInfo2
             // 
-            this.homeInfo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeInfo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeInfo2.Location = new System.Drawing.Point(476, 334);
             this.homeInfo2.Name = "homeInfo2";
             this.homeInfo2.Size = new System.Drawing.Size(396, 56);
@@ -120,6 +120,7 @@
             this.practiceLoci.Text = "Exerseaza";
             this.practiceLoci.UseVisualStyleBackColor = true;
             this.practiceLoci.Visible = false;
+            this.practiceLoci.Click += new System.EventHandler(this.practiceLoci_Click);
             // 
             // learnLoci
             // 
@@ -130,6 +131,7 @@
             this.learnLoci.Text = "Invata";
             this.learnLoci.UseVisualStyleBackColor = true;
             this.learnLoci.Visible = false;
+            this.learnLoci.Click += new System.EventHandler(this.learnLoci_Click);
             // 
             // practiceMajor
             // 
@@ -165,9 +167,9 @@
             this.Controls.Add(this.homeInfo);
             this.Controls.Add(this.practicePeg);
             this.Controls.Add(this.learnPeg);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonMajor);
+            this.Controls.Add(this.buttonLoci);
+            this.Controls.Add(this.buttonPeg);
             this.Name = "MeniuPrincipal";
             this.Text = "MeniuPrincipal";
             this.Load += new System.EventHandler(this.MeniuPrincipal_Load);
@@ -177,9 +179,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonPeg;
+        private System.Windows.Forms.Button buttonLoci;
+        private System.Windows.Forms.Button buttonMajor;
         private System.Windows.Forms.Button learnPeg;
         private System.Windows.Forms.Button practicePeg;
         private System.Windows.Forms.Label homeInfo;

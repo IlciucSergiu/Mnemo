@@ -20,8 +20,10 @@ namespace MemoTricks
           string[] wordsCheck = new string[11];
          int pos = 0, sec1, min;
          string time;
+       // Butonul start
         private void start_Click(object sender, EventArgs e)
         {
+            labelTestPegInfo.Visible = false;
             timeLabel.Text = "00:00:00";
             timer1.Start();
             sec1 = 0; min = 0;
@@ -29,18 +31,21 @@ namespace MemoTricks
             start.Text = "Reincepe";
             info1.Text = Texte1.text_info_1;
             info2.Text = Texte1.text_info_2;
-            // primirea cuvintelor aleatorii
+
+            // Primirea cuvintelor aleatorii
             RandomWords cv = new RandomWords();
             
-               cv.SetWords();
+            // Setarea cuvintelor in vector
+               cv.SetWords("peg");
             for (int i = 1; i <= 10; i++)
             {
+                // Primirea cuvintelor din vector in ordine aleatorie
                 words[i] = cv.GetWords();
-                //MessageBox.Show(cv.GetWords());
+                
             }
             pos = 1;
             label1.Text = pos + ": " + words[1];
-            ImageList imgList = new ImageList();
+            ImageClass imgList = new ImageClass();
             pictureBoxLista.BackgroundImage = imgList.ReturnImage(pos);
             finish.Visible = false;
         }
@@ -51,11 +56,12 @@ namespace MemoTricks
             {
                 pos++;
                 label1.Text = pos +": "+ words[pos];
-                ImageList imgList = new ImageList();
+                ImageClass imgList = new ImageClass();
                 pictureBoxLista.BackgroundImage = imgList.ReturnImage(pos);
             }
             if (pos == 10)
                 finish.Visible = true;
+            
             
         }
 
@@ -65,7 +71,7 @@ namespace MemoTricks
             {
                 pos--;
                 label1.Text = pos + ": " + words[pos];
-                ImageList imgList = new ImageList();
+                ImageClass imgList = new ImageClass();
                 pictureBoxLista.BackgroundImage = imgList.ReturnImage(pos);
             }
         }
@@ -129,6 +135,11 @@ namespace MemoTricks
             timer1.Stop();
             panel1.Visible = true;
             timeTest.Text = timeLabel.Text;
+            pictureBoxLista.BringToFront();
+            pos = 1;
+            ImageClass imgList = new ImageClass();
+            pictureBoxLista.BackgroundImage = imgList.ReturnImage(pos);
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -140,7 +151,14 @@ namespace MemoTricks
 
         private void previous2_Click(object sender, EventArgs e)
         {
-            
+            if (pos > 1)
+            {
+                pos--;
+                label1.Text = pos + ": " + words[pos];
+                ImageClass imgList = new ImageClass();
+                pictureBoxLista.BackgroundImage = imgList.ReturnImage(pos);
+            }
+
             if (pos2 > 1)
             {
                 wordsCheck[pos2] = testTextBox.Text.Trim() ;
@@ -153,6 +171,14 @@ namespace MemoTricks
 
         private void next2_Click(object sender, EventArgs e)
         {
+            if (pos < 10)
+            {
+                pos++;
+                label1.Text = pos + ": " + words[pos];
+                ImageClass imgList = new ImageClass();
+                pictureBoxLista.BackgroundImage = imgList.ReturnImage(pos);
+            }
+
             if (pos2 < 10 )
             {
                 wordsCheck[pos2] = testTextBox.Text.Trim() ;
@@ -208,5 +234,12 @@ namespace MemoTricks
                 this.Close();
 
         }
+
+        private void TestPeg_Load(object sender, EventArgs e)
+        {
+            labelTestPegInfo.Text = Texte1.text_testPegInfo;
+        }
+
+        
     }
 }

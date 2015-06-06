@@ -101,6 +101,55 @@ namespace MemoTricks {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to    Pentru acest exercitiu, va trebui sa memorati ordinea a 20 de jucarii. Chiar daca pare intimidant, veti observa ca metoda Loci face aceasta posibil.  
+        ///   Pentru a va ajuta, am pregatit o “harta” in acest caz imaginea unei case. Apasati butonul de mai jos pentru a o vizualiza inainte de a incepe exercitiul..
+        /// </summary>
+        internal static string text_testLociInfo {
+            get {
+                return ResourceManager.GetString("text_testLociInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Pentru exercitiul urmator v-a trebui sa memorati o lista de zece obiecte ordonate aleator folosind metoda Peg apoi sa le redati in exact aceeasi ordine.
+        ///   Scopul este sa aprofundati sceasta tehnica, iar pe parcurs veti observa ca timpul se va imbunatati considerabil..
+        /// </summary>
+        internal static string text_testPegInfo {
+            get {
+                return ResourceManager.GetString("text_testPegInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to castel
+        ///puzzle
+        ///rata
+        ///trompeta
+        ///avion
+        ///cal
+        ///skateboard
+        ///tren
+        ///zmeu
+        ///papusa
+        ///catel
+        ///masina
+        ///pistol
+        ///yoyo
+        ///vapor
+        ///urs
+        ///robot
+        ///minge
+        ///dinozaur
+        ///telefon
+        ///coarda.
+        /// </summary>
+        internal static string text_words_TestLoci {
+            get {
+                return ResourceManager.GetString("text_words_TestLoci", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to casa
         ///masina
         ///aspirator
@@ -125,15 +174,15 @@ namespace MemoTricks {
         ///radio
         ///pahar.
         /// </summary>
-        internal static string text_words {
+        internal static string text_words_TestPeg {
             get {
-                return ResourceManager.GetString("text_words", resourceCulture);
+                return ResourceManager.GetString("text_words_TestPeg", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to     Un sistem peg este o tehnica folositoare pentru memorarea unei liste de obiecte, nu foarte mare.
-        ///    Un “peg” (cuier) este un carlig mintal in care agatam informatia de care avem nevoie.                                                                                                                    // unele specificatii despre dificultatea tehnicii.
+        ///    Un “peg” (cuier) este un carlig mintal in care agatam informatia de care avem nevoie.                      Aceasta este o tehnica usoara si foarte utila..
         /// </summary>
         internal static string text1_1 {
             get {
@@ -177,11 +226,50 @@ namespace MemoTricks {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to    Chiar daca nu este o tehnica prea complicata, necesita exercitiu, de aceea am creat urmatorul exercitiu  care consta in memorarea a zece obiecte dintr-o lista aleatoare..
         /// </summary>
         internal static string text1_5 {
             get {
                 return ResourceManager.GetString("text1_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to     Metoda loci ( in latina “locuri” ), de asemenea numita palatul memoriei , este o tehnica existenta inca din Roma antica folosita de oratori renumiti precum Cicero si Quintilianus , fiind cunoscuta si sub numele de “Camera romana”.
+        ///    Asemenea metodei Peg, foloseste vizualizarea pentru a organiza si reaminti informatii. In acest caz, in loc de a folosi o lista memorata foloseste unele obiecte situate in locuri specifice, binecunoscute de utilizator pentru a aseza informatia..
+        /// </summary>
+        internal static string text2_1 {
+            get {
+                return ResourceManager.GetString("text2_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to     In cazul camerei romane, vom folosi imaginea unei camere in care va trebui mai intai sa stabilim ordinea exacta a pozitiilor in care vom aseza obiectele. Apoi vom pozitiona fiecare obiect din lista care trebuie memorata in locul corespunzator.
+        ///    Cand avem nevoie sa ne reamintim obiectele, nu trebuie decat sa parcurgem camera, vizualizand obiectele asezate acolo anterior..
+        /// </summary>
+        internal static string text2_2 {
+            get {
+                return ResourceManager.GetString("text2_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   De exemplu, daca avem obiectele : inghetata, ursulet de plus si zmeu, vom organiza imaginea astfel…
+        ///    Cel mai mare beneficiu este ca folosind aceasta tehnica nu ai limita cand vine vorba de numarul de obiecte memorate, deoarece harta nu trebuie sa fie limitata doar la o camera.  Mai are denumirea si de “metoda calatoriei” deoarece folosind aceleasi principii, poti folosi o ruta binecunoscuta pe post de  harta mintala..
+        /// </summary>
+        internal static string text2_3 {
+            get {
+                return ResourceManager.GetString("text2_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Pentru a exersa aceasta tehnica am pregatit un exercitiu  pe care il numim Provocarea Jucariilor..
+        /// </summary>
+        internal static string text2_4 {
+            get {
+                return ResourceManager.GetString("text2_4", resourceCulture);
             }
         }
     }

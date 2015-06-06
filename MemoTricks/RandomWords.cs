@@ -16,13 +16,29 @@ namespace MemoTricks
         string[] words = new string[101];
         int pos = 0;
         string wordsList;
-        public void SetWords()
+       
+        public void SetWords(string sursa)
         {
             // introducem cuvintele din lista intr-un vector
 
             //StreamReader sReader = new StreamReader(Application.StartupPath + "\\Cuvinte.txt");
             //wordsList = sReader.ReadToEnd();
-            wordsList = Texte1.text_words;
+            switch(sursa)
+            {
+                case "peg" :
+                    {
+
+                        wordsList = Texte1.text_words_TestPeg;
+                        break;
+                    }
+
+                case "loci":
+                    {
+
+                        wordsList = Texte1.text_words_TestLoci;
+                        break;
+                    }
+             }
 
             foreach (string word in wordsList.Split('\n'))
             {

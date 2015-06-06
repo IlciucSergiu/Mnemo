@@ -45,8 +45,9 @@
             this.verifyButton = new System.Windows.Forms.Button();
             this.next2 = new System.Windows.Forms.Button();
             this.previous2 = new System.Windows.Forms.Button();
-            this.labelPos2 = new System.Windows.Forms.Label();
             this.testTextBox = new System.Windows.Forms.TextBox();
+            this.labelPos2 = new System.Windows.Forms.Label();
+            this.labelTestPegInfo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLista)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +55,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 93);
+            this.label1.Location = new System.Drawing.Point(150, 176);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(156, 35);
             this.label1.TabIndex = 0;
@@ -63,7 +64,7 @@
             // 
             // start
             // 
-            this.start.Location = new System.Drawing.Point(238, 262);
+            this.start.Location = new System.Drawing.Point(378, 482);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(127, 37);
             this.start.TabIndex = 1;
@@ -73,7 +74,7 @@
             // 
             // next
             // 
-            this.next.Location = new System.Drawing.Point(151, 159);
+            this.next.Location = new System.Drawing.Point(250, 242);
             this.next.Name = "next";
             this.next.Size = new System.Drawing.Size(75, 25);
             this.next.TabIndex = 2;
@@ -84,7 +85,7 @@
             // 
             // previous
             // 
-            this.previous.Location = new System.Drawing.Point(31, 159);
+            this.previous.Location = new System.Drawing.Point(130, 242);
             this.previous.Name = "previous";
             this.previous.Size = new System.Drawing.Size(75, 25);
             this.previous.TabIndex = 3;
@@ -96,16 +97,16 @@
             // info1
             // 
             this.info1.AutoSize = true;
-            this.info1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.info1.Location = new System.Drawing.Point(28, 9);
+            this.info1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.info1.Location = new System.Drawing.Point(126, 20);
             this.info1.Name = "info1";
-            this.info1.Size = new System.Drawing.Size(0, 18);
+            this.info1.Size = new System.Drawing.Size(0, 20);
             this.info1.TabIndex = 4;
             // 
             // info2
             // 
             this.info2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.info2.Location = new System.Drawing.Point(12, 243);
+            this.info2.Location = new System.Drawing.Point(76, 383);
             this.info2.Name = "info2";
             this.info2.Size = new System.Drawing.Size(195, 56);
             this.info2.TabIndex = 5;
@@ -113,7 +114,7 @@
             // checkImages
             // 
             this.checkImages.AutoSize = true;
-            this.checkImages.Location = new System.Drawing.Point(29, 208);
+            this.checkImages.Location = new System.Drawing.Point(79, 341);
             this.checkImages.Name = "checkImages";
             this.checkImages.Size = new System.Drawing.Size(59, 17);
             this.checkImages.TabIndex = 6;
@@ -126,16 +127,16 @@
             // 
             this.pictureBoxLista.BackgroundImage = global::MemoTricks.Imagini1.Cuier;
             this.pictureBoxLista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxLista.Location = new System.Drawing.Point(330, 42);
+            this.pictureBoxLista.Location = new System.Drawing.Point(432, 113);
             this.pictureBoxLista.Name = "pictureBoxLista";
-            this.pictureBoxLista.Size = new System.Drawing.Size(235, 168);
+            this.pictureBoxLista.Size = new System.Drawing.Size(414, 263);
             this.pictureBoxLista.TabIndex = 7;
             this.pictureBoxLista.TabStop = false;
             this.pictureBoxLista.Visible = false;
             // 
             // finish
             // 
-            this.finish.Location = new System.Drawing.Point(417, 262);
+            this.finish.Location = new System.Drawing.Point(557, 482);
             this.finish.Name = "finish";
             this.finish.Size = new System.Drawing.Size(127, 37);
             this.finish.TabIndex = 8;
@@ -154,7 +155,7 @@
             this.timeLabel.AutoSize = true;
             this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeLabel.ForeColor = System.Drawing.Color.Red;
-            this.timeLabel.Location = new System.Drawing.Point(256, 223);
+            this.timeLabel.Location = new System.Drawing.Point(770, 522);
             this.timeLabel.Name = "timeLabel";
             this.timeLabel.Size = new System.Drawing.Size(80, 24);
             this.timeLabel.TabIndex = 9;
@@ -166,11 +167,12 @@
             this.panel1.Controls.Add(this.verifyButton);
             this.panel1.Controls.Add(this.next2);
             this.panel1.Controls.Add(this.previous2);
-            this.panel1.Controls.Add(this.labelPos2);
             this.panel1.Controls.Add(this.testTextBox);
-            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Controls.Add(this.labelPos2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(621, 329);
+            this.panel1.Size = new System.Drawing.Size(884, 561);
             this.panel1.TabIndex = 10;
             this.panel1.Visible = false;
             // 
@@ -179,7 +181,7 @@
             this.timeTest.AutoSize = true;
             this.timeTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeTest.ForeColor = System.Drawing.Color.DarkRed;
-            this.timeTest.Location = new System.Drawing.Point(255, 18);
+            this.timeTest.Location = new System.Drawing.Point(746, 518);
             this.timeTest.Name = "timeTest";
             this.timeTest.Size = new System.Drawing.Size(47, 20);
             this.timeTest.TabIndex = 5;
@@ -187,7 +189,7 @@
             // 
             // verifyButton
             // 
-            this.verifyButton.Location = new System.Drawing.Point(404, 243);
+            this.verifyButton.Location = new System.Drawing.Point(620, 449);
             this.verifyButton.Name = "verifyButton";
             this.verifyButton.Size = new System.Drawing.Size(139, 46);
             this.verifyButton.TabIndex = 4;
@@ -197,7 +199,7 @@
             // 
             // next2
             // 
-            this.next2.Location = new System.Drawing.Point(178, 170);
+            this.next2.Location = new System.Drawing.Point(278, 283);
             this.next2.Name = "next2";
             this.next2.Size = new System.Drawing.Size(75, 23);
             this.next2.TabIndex = 3;
@@ -207,7 +209,7 @@
             // 
             // previous2
             // 
-            this.previous2.Location = new System.Drawing.Point(46, 170);
+            this.previous2.Location = new System.Drawing.Point(146, 283);
             this.previous2.Name = "previous2";
             this.previous2.Size = new System.Drawing.Size(75, 23);
             this.previous2.TabIndex = 2;
@@ -215,42 +217,55 @@
             this.previous2.UseVisualStyleBackColor = true;
             this.previous2.Click += new System.EventHandler(this.previous2_Click);
             // 
+            // testTextBox
+            // 
+            this.testTextBox.Location = new System.Drawing.Point(174, 235);
+            this.testTextBox.Name = "testTextBox";
+            this.testTextBox.Size = new System.Drawing.Size(122, 20);
+            this.testTextBox.TabIndex = 0;
+            this.testTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+           
+            // 
             // labelPos2
             // 
             this.labelPos2.AutoSize = true;
             this.labelPos2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPos2.Location = new System.Drawing.Point(85, 80);
+            this.labelPos2.Location = new System.Drawing.Point(196, 176);
             this.labelPos2.Name = "labelPos2";
             this.labelPos2.Size = new System.Drawing.Size(25, 25);
             this.labelPos2.TabIndex = 1;
             this.labelPos2.Text = "1";
             // 
-            // testTextBox
+            // labelTestPegInfo
             // 
-            this.testTextBox.Location = new System.Drawing.Point(74, 122);
-            this.testTextBox.Name = "testTextBox";
-            this.testTextBox.Size = new System.Drawing.Size(122, 20);
-            this.testTextBox.TabIndex = 0;
-            this.testTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.labelTestPegInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTestPegInfo.Location = new System.Drawing.Point(56, 113);
+            this.labelTestPegInfo.Name = "labelTestPegInfo";
+            this.labelTestPegInfo.Size = new System.Drawing.Size(755, 180);
+            this.labelTestPegInfo.TabIndex = 11;
+            this.labelTestPegInfo.Text = "label2";
             // 
             // TestPeg
             // 
+            this.AcceptButton = this.next2;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 326);
+            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.timeLabel);
-            this.Controls.Add(this.finish);
-            this.Controls.Add(this.pictureBoxLista);
             this.Controls.Add(this.checkImages);
             this.Controls.Add(this.info2);
+            this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.info1);
-            this.Controls.Add(this.previous);
-            this.Controls.Add(this.next);
+            this.Controls.Add(this.pictureBoxLista);
+            this.Controls.Add(this.finish);
             this.Controls.Add(this.start);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.next);
+            this.Controls.Add(this.previous);
+            this.Controls.Add(this.labelTestPegInfo);
             this.Name = "TestPeg";
             this.Text = "TestPeg";
+            this.Load += new System.EventHandler(this.TestPeg_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLista)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -279,5 +294,6 @@
         private System.Windows.Forms.Label labelPos2;
         private System.Windows.Forms.Button verifyButton;
         private System.Windows.Forms.Label timeTest;
+        private System.Windows.Forms.Label labelTestPegInfo;
     }
 }

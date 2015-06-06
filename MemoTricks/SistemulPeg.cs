@@ -221,7 +221,7 @@ namespace MemoTricks
             if (_image < 10)
             {
                 _image++;
-                ImageList imgList = new ImageList();
+                ImageClass imgList = new ImageClass();
                 pictureBoxLista.BackgroundImage = imgList.ReturnImage(_image);
                 
             }
@@ -233,7 +233,7 @@ namespace MemoTricks
             {
                 _image--;
 
-                ImageList imgList = new ImageList();
+                ImageClass imgList = new ImageClass();
                 pictureBoxLista.BackgroundImage = imgList.ReturnImage(_image);
             }
         }
