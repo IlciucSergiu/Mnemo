@@ -27,37 +27,46 @@ namespace MemoTricks
             labelInfoTestLoci.Text = Texte1.text_testLociInfo;
             ImageClass imgcls = new ImageClass();
 
-            pictureBoxHelpImage.BackgroundImage =imgcls.CropImage(Imagini2.loci_house, 0, 0, 500, 500);
+            pictureBoxHelpImage.BackgroundImage = imgcls.CropImage(Imagini2.loci_house, 0, 0, Imagini2.loci_house.Width, Imagini2.loci_house.Height);
+
+            
            
+           
+            
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             labelInfoTestLoci.Visible = false;
             timerTestLoci.Start();
                SetVisible();
+            
             RandomWords randomWords = new RandomWords();
 
             randomWords.SetWords("loci");
             for (int i = 1; i <= 20; i++)
             {
                 words[i] = randomWords.GetWords();
-                //MessageBox.Show(cv.GetWords());
+                
             }
 
             buttonStart.Text = "Reincepe";
             pos = 1;
             labelWords.Text = pos + " : " +  words[pos];
-
+            SetToyImage(words[1]);
         }
 
         private void buttonNext_Click(object sender, EventArgs e)
         {
+            
             if (pos < 20)
             {
                 pos++;
                 labelWords.Text = pos + " : " + words[pos];
+                SetToyImage(words[pos]);
+                
             }
         }
 
@@ -67,6 +76,7 @@ namespace MemoTricks
             {
                 pos--;
                 labelWords.Text = pos + " : " + words[pos];
+                SetToyImage(words[pos]);
             }
         }
 
@@ -76,6 +86,7 @@ namespace MemoTricks
             buttonNext.Visible = true;
             buttonVerify.Visible = true;
             labelWords.Visible = true;
+            checkBoxImagesHelp.Visible = true;
         }
 
         private void buttonShowHouse_Click(object sender, EventArgs e)
@@ -142,6 +153,7 @@ namespace MemoTricks
                 labelWords2.Text = pos2.ToString();
 
                 textBoxWords.Text = wordsCheck[pos2];
+               
             }
         }
 
@@ -153,6 +165,7 @@ namespace MemoTricks
                 pos2++;
                 labelWords2.Text = pos2.ToString();
                 textBoxWords.Text = wordsCheck[pos2];
+                
             }
         }
 
@@ -189,12 +202,42 @@ namespace MemoTricks
                 labelTime.Text = "00:0" + min + ":" + sec1;
         }
 
-        private void checkBoxImages_CheckedChanged(object sender, EventArgs e)
+        
+
+        //Primeste numele unei jucarii si seteaza imaginea
+        void SetToyImage(string toyName)
         {
-            if (checkBoxImages.Checked == true)
-                pictureBoxHelpImage.Visible = true;
+            RandomWords randomWord = new RandomWords();
+
+            int i;
+            i = randomWord.GetImageNumber(toyName);
+            object img;
+            if (i < 10)
+                img = ImagesToys.ResourceManager.GetObject("toy_0" + i.ToString());
             else
+                img = ImagesToys.ResourceManager.GetObject("toy_" + i.ToString());
+
+            //MessageBox.Show("Test");
+            pictureBoxToys.BackgroundImage = (Image)img;
+        }
+
+        void SetHouseImage()
+        { 
+          
+        
+        }
+        private void checkBoxImagesHelp_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxImagesHelp.Checked == true)
+            {
+                pictureBoxHelpImage.Visible = true;
+                pictureBoxToys.Visible = true;
+            }
+            else 
+            {
                 pictureBoxHelpImage.Visible = false;
+                pictureBoxToys.Visible = false;
+            }
         }
 
         

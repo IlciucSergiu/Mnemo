@@ -58,3 +58,4 @@ C:\Sergiu\Programe\CSharp\Proiecte\Mnemo\MemoTricks\obj\Debug\MemoTricks.TestLoc
 C:\Sergiu\Programe\CSharp\Proiecte\Mnemo\MemoTricks\obj\Debug\MemoTricks.TestPeg.resources
 C:\Sergiu\Programe\CSharp\Proiecte\Mnemo\MemoTricks\obj\Debug\MemoTricks.Texte1.resources
 C:\Sergiu\Programe\CSharp\Proiecte\Mnemo\MemoTricks\obj\Debug\MemoTricks.csproj.GenerateResource.Cache
+C:\Sergiu\Programe\CSharp\Proiecte\Mnemo\MemoTricks\obj\Debug\MemoTricks.ImagesToys.resources

@@ -121,27 +121,27 @@ namespace MemoTricks {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to castel
+        ///   Looks up a localized string similar to avion
+        ///cal
+        ///castel
+        ///catel
+        ///dinozaur
+        ///masina
+        ///minge
+        ///papusa
+        ///pistol
         ///puzzle
         ///rata
-        ///trompeta
-        ///avion
-        ///cal
-        ///skateboard
-        ///tren
-        ///zmeu
-        ///papusa
-        ///catel
-        ///masina
-        ///pistol
-        ///yoyo
-        ///vapor
-        ///urs
         ///robot
-        ///minge
-        ///dinozaur
+        ///skateboard
         ///telefon
-        ///coarda.
+        ///tren
+        ///trompeta
+        ///urs
+        ///vapor
+        ///xilofon
+        ///yoyo
+        ///zmeu.
         /// </summary>
         internal static string text_words_TestLoci {
             get {

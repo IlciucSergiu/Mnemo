@@ -76,5 +76,23 @@ namespace MemoTricks
 
 
         }
+
+        
+
+       public  int GetImageNumber(string wordS)
+        {
+            pos = 1;
+            wordsList = Texte1.text_words_TestLoci;
+            foreach (string word in wordsList.Split('\n'))
+            {
+                
+                if (word == wordS)
+                    return pos;
+                else
+                pos++;
+
+            }
+            return 0;
+       }
     }
 }

@@ -36,7 +36,6 @@
             this.buttonShowHouse = new System.Windows.Forms.Button();
             this.buttonStart = new System.Windows.Forms.Button();
             this.panelVerify = new System.Windows.Forms.Panel();
-            this.checkBoxImages = new System.Windows.Forms.CheckBox();
             this.buttonFinish = new System.Windows.Forms.Button();
             this.buttonNext2 = new System.Windows.Forms.Button();
             this.buttonPrevious2 = new System.Windows.Forms.Button();
@@ -44,10 +43,13 @@
             this.textBoxWords = new System.Windows.Forms.TextBox();
             this.timerTestLoci = new System.Windows.Forms.Timer(this.components);
             this.labelTime = new System.Windows.Forms.Label();
-            this.pictureBoxHelpImage = new System.Windows.Forms.PictureBox();
             this.labelInfoTestLoci = new System.Windows.Forms.Label();
+            this.pictureBoxHelpImage = new System.Windows.Forms.PictureBox();
+            this.pictureBoxToys = new System.Windows.Forms.PictureBox();
+            this.checkBoxImagesHelp = new System.Windows.Forms.CheckBox();
             this.panelVerify.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHelpImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxToys)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonPrevious
@@ -115,29 +117,16 @@
             // 
             // panelVerify
             // 
-            this.panelVerify.Controls.Add(this.checkBoxImages);
             this.panelVerify.Controls.Add(this.buttonFinish);
             this.panelVerify.Controls.Add(this.buttonNext2);
             this.panelVerify.Controls.Add(this.buttonPrevious2);
             this.panelVerify.Controls.Add(this.labelWords2);
             this.panelVerify.Controls.Add(this.textBoxWords);
-            this.panelVerify.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelVerify.Location = new System.Drawing.Point(0, 0);
+            this.panelVerify.Location = new System.Drawing.Point(754, 503);
             this.panelVerify.Name = "panelVerify";
-            this.panelVerify.Size = new System.Drawing.Size(884, 561);
+            this.panelVerify.Size = new System.Drawing.Size(130, 58);
             this.panelVerify.TabIndex = 6;
             this.panelVerify.Visible = false;
-            // 
-            // checkBoxImages
-            // 
-            this.checkBoxImages.AutoSize = true;
-            this.checkBoxImages.Location = new System.Drawing.Point(36, 372);
-            this.checkBoxImages.Name = "checkBoxImages";
-            this.checkBoxImages.Size = new System.Drawing.Size(59, 17);
-            this.checkBoxImages.TabIndex = 8;
-            this.checkBoxImages.Text = "Imagini";
-            this.checkBoxImages.UseVisualStyleBackColor = true;
-            this.checkBoxImages.CheckedChanged += new System.EventHandler(this.checkBoxImages_CheckedChanged);
             // 
             // buttonFinish
             // 
@@ -201,16 +190,6 @@
             this.labelTime.TabIndex = 5;
             this.labelTime.Text = "00:00:00";
             // 
-            // pictureBoxHelpImage
-            // 
-            this.pictureBoxHelpImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxHelpImage.Location = new System.Drawing.Point(397, 50);
-            this.pictureBoxHelpImage.Name = "pictureBoxHelpImage";
-            this.pictureBoxHelpImage.Size = new System.Drawing.Size(465, 304);
-            this.pictureBoxHelpImage.TabIndex = 7;
-            this.pictureBoxHelpImage.TabStop = false;
-            this.pictureBoxHelpImage.Visible = false;
-            // 
             // labelInfoTestLoci
             // 
             this.labelInfoTestLoci.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -220,6 +199,38 @@
             this.labelInfoTestLoci.TabIndex = 8;
             this.labelInfoTestLoci.Text = "label1";
             // 
+            // pictureBoxHelpImage
+            // 
+            this.pictureBoxHelpImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxHelpImage.Location = new System.Drawing.Point(384, 81);
+            this.pictureBoxHelpImage.Name = "pictureBoxHelpImage";
+            this.pictureBoxHelpImage.Size = new System.Drawing.Size(465, 304);
+            this.pictureBoxHelpImage.TabIndex = 7;
+            this.pictureBoxHelpImage.TabStop = false;
+            this.pictureBoxHelpImage.Visible = false;
+            // 
+            // pictureBoxToys
+            // 
+            this.pictureBoxToys.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxToys.Location = new System.Drawing.Point(36, 357);
+            this.pictureBoxToys.Name = "pictureBoxToys";
+            this.pictureBoxToys.Size = new System.Drawing.Size(231, 171);
+            this.pictureBoxToys.TabIndex = 9;
+            this.pictureBoxToys.TabStop = false;
+            this.pictureBoxToys.Visible = false;
+            // 
+            // checkBoxImagesHelp
+            // 
+            this.checkBoxImagesHelp.AutoSize = true;
+            this.checkBoxImagesHelp.Location = new System.Drawing.Point(36, 318);
+            this.checkBoxImagesHelp.Name = "checkBoxImagesHelp";
+            this.checkBoxImagesHelp.Size = new System.Drawing.Size(59, 17);
+            this.checkBoxImagesHelp.TabIndex = 10;
+            this.checkBoxImagesHelp.Text = "Imagini";
+            this.checkBoxImagesHelp.UseVisualStyleBackColor = true;
+            this.checkBoxImagesHelp.Visible = false;
+            this.checkBoxImagesHelp.CheckedChanged += new System.EventHandler(this.checkBoxImagesHelp_CheckedChanged);
+            // 
             // TestLoci
             // 
             this.AcceptButton = this.buttonNext2;
@@ -227,6 +238,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.checkBoxImagesHelp);
             this.Controls.Add(this.pictureBoxHelpImage);
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.panelVerify);
@@ -237,12 +249,14 @@
             this.Controls.Add(this.buttonNext);
             this.Controls.Add(this.buttonPrevious);
             this.Controls.Add(this.labelInfoTestLoci);
+            this.Controls.Add(this.pictureBoxToys);
             this.Name = "TestLoci";
             this.Text = "TestLoci";
             this.Load += new System.EventHandler(this.TestLoci_Load);
             this.panelVerify.ResumeLayout(false);
             this.panelVerify.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHelpImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxToys)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,7 +279,8 @@
         private System.Windows.Forms.Timer timerTestLoci;
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.PictureBox pictureBoxHelpImage;
-        private System.Windows.Forms.CheckBox checkBoxImages;
         private System.Windows.Forms.Label labelInfoTestLoci;
+        private System.Windows.Forms.PictureBox pictureBoxToys;
+        private System.Windows.Forms.CheckBox checkBoxImagesHelp;
     }
 }

@@ -182,27 +182,27 @@
    Scopul este sa aprofundati sceasta tehnica, iar pe parcurs veti observa ca timpul se va imbunatati considerabil.</value>
   </data>
   <data name="text_words_TestLoci" xml:space="preserve">
-    <value>castel
+    <value>avion
+cal
+castel
+catel
+dinozaur
+masina
+minge
+papusa
+pistol
 puzzle
 rata
-trompeta
-avion
-cal
-skateboard
-tren
-zmeu
-papusa
-catel
-masina
-pistol
-yoyo
-vapor
-urs
 robot
-minge
-dinozaur
+skateboard
 telefon
-coarda</value>
+tren
+trompeta
+urs
+vapor
+xilofon
+yoyo
+zmeu</value>
   </data>
   <data name="text_words_TestPeg" xml:space="preserve">
     <value>casa
